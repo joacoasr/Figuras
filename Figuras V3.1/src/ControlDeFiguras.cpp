@@ -6,8 +6,9 @@
 // Description : Clases, polimorfismo, herencia C++, Ansi-style
 //============================================================================
 
+#include "../include/ControlDeFiguras.h"
+
 #include <iostream>
-#include "ControlDeFiguras.h"
 
 using namespace std;
 

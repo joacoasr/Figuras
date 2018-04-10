@@ -6,8 +6,9 @@
 // Description : Clases, polimorfismo, herencia C++, Ansi-style
 //============================================================================
 
+#include "../include/Menu.h"
+
 #include <iostream>
-#include "Menu.h"
 
 using namespace std;
 

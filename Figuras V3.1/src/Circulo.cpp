@@ -6,10 +6,11 @@
 // Description : Clases, polimorfismo, herencia C++, Ansi-style
 //============================================================================
 
+#include "../include/Circulo.h"
+
 #include <iostream>
 #include <stdlib.h>
 #include <math.h>
-#include "Circulo.h"
 
 using namespace std;
 

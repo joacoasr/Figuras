@@ -6,7 +6,7 @@
 // Description : Clases, polimorfismo, herencia C++, Ansi-style
 //============================================================================
 
-#include "Punto.h"
+#include "../include/Punto.h"
 
 using namespace std;
 

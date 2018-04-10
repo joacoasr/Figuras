@@ -6,9 +6,10 @@
 // Description : Clases, polimorfismo, herencia C++, Ansi-style
 //============================================================================
 
+#include "../include/Rectangulo.h"
+
 #include <iostream>
 
-#include "Rectangulo.h"
 
 using namespace std;
 

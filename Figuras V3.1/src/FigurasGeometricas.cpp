@@ -6,7 +6,7 @@
 // Description : Clases, polimorfismo, herencia C++, Ansi-style
 //============================================================================
 
-#include "FigurasGeometricas.h"
+#include "../include/FigurasGeometricas.h"
 
 using namespace std;
 

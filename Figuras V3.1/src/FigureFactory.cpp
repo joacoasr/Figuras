@@ -6,7 +6,7 @@
 // Description : Clases, polimorfismo, herencia C++, Ansi-style
 //============================================================================
 
-#include "FigureFactory.h"
+#include "../include/FigureFactory.h"
 
 /*FigureFactory::FigureFactory() {
 	// TODO Auto-generated constructor stub

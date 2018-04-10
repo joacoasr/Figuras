@@ -7,8 +7,9 @@
 //============================================================================
 
 
+#include "../include/TrianguloFactory.h"
+
 #include <iostream>
-#include "TrianguloFactory.h"
 
 using namespace std;
 

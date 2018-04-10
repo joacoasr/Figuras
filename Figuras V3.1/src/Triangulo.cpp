@@ -6,7 +6,7 @@
 // Description : Clases, polimorfismo, herencia C++, Ansi-style
 //============================================================================
 
-#include "Triangulo.h"
+#include "../include/Triangulo.h"
 
 #include <iostream>
 #include <math.h>

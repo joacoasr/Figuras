@@ -6,9 +6,10 @@
 // Description : Clases, polimorfismo, herencia C++, Ansi-style
 //============================================================================
 
+#include "../include/CirculoFactory.h"
+
 #include <iostream>
 
-#include "CirculoFactory.h"
 
 using namespace std;
 
