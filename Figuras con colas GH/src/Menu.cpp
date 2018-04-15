@@ -91,7 +91,7 @@ void Menu::OpcionesMenu(){
 
 			case 7:{
 
-				cout << "Hay " <<  CdF.getMaximo() << " figura/s. " <<  endl;
+				cout << "\nHay " <<  CdF.getMaximo() << " figura/s. " <<  endl;
 				break;
 			}
 
