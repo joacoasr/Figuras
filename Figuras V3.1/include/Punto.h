@@ -15,12 +15,20 @@ class Punto {
 
 	private:
 
-	public:
-
 		float X, Y, Radio;
 
-		Punto(float,float,float);
+	public:
+
+
+
+		//Punto(float,float,float);
 		virtual ~Punto();
+		void setPuntoX(float );
+		void setPuntoY(float );
+		void setRadio(float);
+		float getPuntoX();
+		float getPuntoY();
+		float getRadio();
 
 };
 

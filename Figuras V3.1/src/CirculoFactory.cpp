@@ -26,17 +26,23 @@ FigurasGeometricas *CirculoFactory::CrearFigura(){
 	FigurasGeometricas *FG;
 	Punto *PC;
 
+	float PX,PY,Rad;
+
 	cout << "Ingrese los datos del Circulo:\n " << endl;
 
-	PC = new Punto(0,0,0);  //necesite crear el objeto e inicializarlo en algun valor
+	PC = new Punto();  //necesite crear el objeto e inicializarlo en algun valor
 	cout << "Punto (X,Y):" << endl;
-	cin >> PC -> X
-		>> PC -> Y;
+	cin >> PX
+		>> PY;
 	cout << "Radio: " << endl;
-	cin >> PC -> Radio;
+	cin >> Rad;
+
+	PC -> setPuntoX(PX);
+	PC -> setPuntoY(PY);
+	PC -> setRadio(Rad);
 
 	Circulo *cir;
-	cir = new Circulo(PC->X,PC->Y, PC->Radio);
+	cir = new Circulo( PC->getPuntoX(), PC->getPuntoY(), PC->getRadio() );
 
 	FG = cir;
 
