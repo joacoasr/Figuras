@@ -123,7 +123,8 @@ void ControlDeFiguras::mostrar_datos_de_figuras(FigurasGeometricas *FiGe[], int 
 
 	for( i = 0 ; i < n ; i++ ){
 
-		cout <<"\nFigura número: " << (i+1) << endl;;
+		cout <<"\n--------------"
+	         <<"\nFigura número: " << (i+1) << endl;
 		FiGe[i] -> mostrarDatos();
 
 	}
