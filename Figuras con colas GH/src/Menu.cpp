@@ -69,7 +69,7 @@ void Menu::OpcionesMenu(){
 
 			case 3:{
 
-				CdF.Trasladar_ejes_figuras(Frente,CdF.getMaximo());
+				CdF.Trasladar_ejes_figuras(Frente,Lista,CdF.getMaximo());
 				break;
 			}
 /*

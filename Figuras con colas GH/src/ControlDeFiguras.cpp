@@ -32,91 +32,105 @@ int ControlDeFiguras::getMaximo(){
 
 };
 
-void ControlDeFiguras::Trasladar_ejes_figuras(Nodo *Frente, int MAX){
+void ControlDeFiguras::Trasladar_ejes_figuras(Nodo *Frente,Nodo *L, int MAX){
 
-	int caso = 1, VTid = 1;
+	int caso = 1, VTid = 0;
 	float ValorTraslacionX,ValorTraslacionY;
 	Nodo *actual = new Nodo();
 	actual = Frente;
 
-	while( ( VTid > 0 ) && ( VTid <= MAX )){
+	cout << "\n----Prueba error 1---- " << L -> ListaVacia (Frente) << endl;
 
-		cout << "\nCon que figura dentro del vector desea interactuar?: ";
-		cin >> VTid;
+	while( ( VTid >= 0 ) && ( VTid <= MAX )){
 
-		if( ( VTid > 0 ) && ( VTid <= MAX ) ){
+		cout << "\n----Prueba error 2---- " << L -> ListaVacia (Frente) << endl;
 
-			while (( caso > 0 ) && (caso < 4)){
+		if( L -> ListaVacia (Frente) ){
 
-				cout << "\nOpciones:\n" << endl
-					 << "1) Trasladar en el eje X\n" << endl
-					 << "2) Trasladar en el eje Y\n" << endl
-					 << "3) Trasladar en el eje X e Y" << endl
-					 << "\nOpcion: ";
-				cin >> caso;
+			cout << "\n----Prueba error 3---- " << L -> ListaVacia (Frente) << endl;
+			cout << "\n-----Lista vacia-----" << endl;
+			VTid = -1;
 
-				if ( ( caso > 0 ) && ( caso < 4 )){
-
-					while( actual != NULL ){
-
-						if( actual->getid() == VTid ){
-
-							switch (caso){
-
-								case 1:
-
-									cout << "\nEn que valor desea trasladar al eje X:";
-									cin >> ValorTraslacionX;
-
-									actual -> getFigGeo() -> TrasladarEjeX(ValorTraslacionX);
-
-									break;
-
-								case 2:
-
-									cout << "\nEn que valor desea trasladar al eje Y:";
-									cin >> ValorTraslacionY;
-
-									actual -> getFigGeo() -> TrasladarEjeY(ValorTraslacionY);
-
-									break;
-
-								case 3:
-
-									cout << "\nEn que valor desea trasladar al eje X:";
-									cin >> ValorTraslacionX;
-									actual -> getFigGeo() -> TrasladarEjeX(ValorTraslacionX);
-
-									cout << "\nEn que valor desea trasladar al eje Y:";
-									cin >> ValorTraslacionY;
-									actual -> getFigGeo() -> TrasladarEjeY(ValorTraslacionY);
-
-								break;
-
-								default:
-
-									cout << "Opcion Incorrecta, intentalo de nuevo xD" <<endl;
-
-							}
-						}
-						actual = actual -> getNodo();
-					}
-
-					caso = -1;
-					VTid = 0;
-
-				}else if ( ( caso < 1 ) || ( caso > 3 )){
-
-						  cout << "Opcion no valida." << endl;
-						  caso = 1;
-
-				}
-			}
 		}else{
 
-			cout << "\nValor no valido, hay figuras desde la posicion 1 a la " << MAX << endl;
-			VTid = 1;
+			cout << "\n----Prueba error 4---- " << L -> ListaVacia (Frente) << endl;
+			cout << "\nCon que figura dentro del vector desea interactuar?: ";
+			cin >> VTid;
 
+			if( ( VTid >= 0 ) && ( VTid < MAX ) ){
+
+				while (( caso > 0 ) && (caso < 4)){
+
+					cout << "\nOpciones:\n" << endl
+						 << "1) Trasladar en el eje X\n" << endl
+						 << "2) Trasladar en el eje Y\n" << endl
+						 << "3) Trasladar en el eje X e Y" << endl
+						 << "\nOpcion: ";
+					cin >> caso;
+
+					if ( ( caso > 0 ) && ( caso < 4 )){
+
+						while( actual != NULL ){
+
+							if( actual->getid() == VTid ){
+
+								switch (caso){
+
+									case 1:
+
+										cout << "\nEn que valor desea trasladar al eje X:";
+										cin >> ValorTraslacionX;
+
+										actual -> getFigGeo() -> TrasladarEjeX(ValorTraslacionX);
+
+										break;
+
+									case 2:
+
+										cout << "\nEn que valor desea trasladar al eje Y:";
+										cin >> ValorTraslacionY;
+
+										actual -> getFigGeo() -> TrasladarEjeY(ValorTraslacionY);
+
+										break;
+
+									case 3:
+
+										cout << "\nEn que valor desea trasladar al eje X:";
+										cin >> ValorTraslacionX;
+										actual -> getFigGeo() -> TrasladarEjeX(ValorTraslacionX);
+
+										cout << "\nEn que valor desea trasladar al eje Y:";
+										cin >> ValorTraslacionY;
+										actual -> getFigGeo() -> TrasladarEjeY(ValorTraslacionY);
+
+									break;
+
+									default:
+
+										cout << "Opcion Incorrecta, intentalo de nuevo xD" <<endl;
+
+								}
+							}
+							actual = actual -> getNodo();
+						}
+
+						caso = -1;
+						VTid = -1;
+
+					}else if ( ( caso < 1 ) || ( caso > 3 )){
+
+							  cout << "Opcion no valida." << endl;
+							  caso = 1;
+
+					}
+				}
+			}else{
+
+				cout << "\nNo hay Figuras con ese id." << endl;
+				VTid = 0;
+
+			}
 		}
 	}
 };
@@ -221,27 +235,39 @@ int ControlDeFiguras::EliminarCualquierFigura(Nodo *&Frente, Nodo *L, int M){
 
 	while ( control != 0 ){
 
-		cout << "Que figura desea eliminar? (Utilizar el id de la figura):";
-		cin >> eliminar;
+		if( !L->ListaVacia(Frente) ){
 
-		if( ( eliminar >= 0 ) && ( eliminar < M ) ){
+			cout << "Que figura desea eliminar? (Utilizar el id de la figura):";
+			cin >> eliminar;
 
-			L -> EliminarFiguraSegunId(Frente,eliminar,M);
+			if( ( eliminar >= 0 ) && ( eliminar < M ) ){
 
-			if( M > 0 ){
+				L -> EliminarFiguraSegunId(Frente,eliminar,M);
 
-				M--;
+				if( M > 0 ){
 
-			}
-			control = 0;
+					M--;
 
-		}else{
+				}
+				control = 0;
+
+
+			}else{
 
 			cout << "\nNo hay figuas con ese id." << endl;
 			control = -1;
+
+			}
+
+		}else{
+
+			cout << "\n-----Lista Vacia-----" << endl;
+			control = 0;
+
 		}
 
 	}
 	return M;
+
 
 };

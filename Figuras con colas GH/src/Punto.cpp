@@ -10,15 +10,36 @@
 
 using namespace std;
 
-Punto::Punto( float PX, float PY, float R ) {
+Punto::~Punto() {
+}
+
+void Punto::setPuntoX(float PX){
 
 	this -> X = PX;
+
+};
+void Punto::setPuntoY(float PY){
+
 	this -> Y = PY;
-	this -> Radio = R;
 
-}
+};
+void Punto::setRadio(float Rad){
 
-Punto::~Punto() {
-	// TODO Auto-generated destructor stub
-}
+	this -> Radio = Rad;
 
+};
+float Punto::getPuntoX(){
+
+	return(this->X);
+
+};
+float Punto::getPuntoY(){
+
+	return(this->Y);
+
+};
+float Punto::getRadio(){
+
+	return(this->Radio);
+
+};

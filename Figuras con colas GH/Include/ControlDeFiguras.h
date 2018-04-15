@@ -34,7 +34,7 @@ class ControlDeFiguras {
 		int getMaximo();
 		virtual ~ControlDeFiguras();
 		FigurasGeometricas *Crear_Figuras_Geometricas();
-		void Trasladar_ejes_figuras(Nodo *,int);
+		void Trasladar_ejes_figuras(Nodo *,Nodo *,int);
 		int EliminarCualquierFigura(Nodo *&, Nodo *, int );
 		int InsertarFiguraEnLaLista(Nodo *&, Nodo *&,Nodo *,int ,ControlDeFiguras);
 		int EliminarFiguraDeLaLista(Nodo *&, Nodo *&, Nodo *,int );
