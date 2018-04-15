@@ -121,13 +121,15 @@ void ControlDeFiguras::mostrar_datos_de_figuras(FigurasGeometricas *FiGe[], int 
 
 	int i;
 
+	cout << "\n-----Vector de Figuras-----" << endl;
 	for( i = 0 ; i < n ; i++ ){
 
-		cout <<"\n--------------"
+		cout <<"\n---------------------------"
 	         <<"\nFigura número: " << (i+1) << endl;
 		FiGe[i] -> mostrarDatos();
 
 	}
+	cout << "---------------------------" << endl;
 
 };
 

@@ -43,8 +43,8 @@ void Menu::OpcionesMenu(){
 
 		if( CdF.getMaximo() == 0 ){
 
-			cout << "---No hay figuras dentro del vector---" << endl
-				 << "---Gracias por usar el programa---"<< endl;
+			cout << "\n-----No hay figuras dentro del vector-----" << endl
+				 << "-------Gracias por usar el programa-------  "<< endl;
 
 			control = 0;
 
@@ -66,7 +66,7 @@ void Menu::OpcionesMenu(){
 
 				case 0:
 
-					cout << "Gracias por usar el programa, bye!!!" << endl;
+					cout << "\nGracias por usar el programa, bye!!!" << endl;
 					break;
 
 				case 1:
