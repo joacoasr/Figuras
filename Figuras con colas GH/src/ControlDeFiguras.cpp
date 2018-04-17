@@ -39,21 +39,16 @@ void ControlDeFiguras::Trasladar_ejes_figuras(Nodo *Frente,Nodo *L, int MAX){
 	Nodo *actual = new Nodo();
 	actual = Frente;
 
-	cout << "\n----Prueba error 1---- " << L -> ListaVacia (Frente) << endl;
 
 	while( ( VTid >= 0 ) && ( VTid <= MAX )){
 
-		cout << "\n----Prueba error 2---- " << L -> ListaVacia (Frente) << endl;
-
 		if( L -> ListaVacia (Frente) ){
 
-			cout << "\n----Prueba error 3---- " << L -> ListaVacia (Frente) << endl;
 			cout << "\n-----Lista vacia-----" << endl;
 			VTid = -1;
 
 		}else{
 
-			cout << "\n----Prueba error 4---- " << L -> ListaVacia (Frente) << endl;
 			cout << "\nCon que figura dentro del vector desea interactuar?: ";
 			cin >> VTid;
 
@@ -271,3 +266,31 @@ int ControlDeFiguras::EliminarCualquierFigura(Nodo *&Frente, Nodo *L, int M){
 
 
 };
+void ControlDeFiguras::CambiarDePosicionFigura(Nodo *Frente, Nodo *L){
+
+	int posInicial, posFinal;
+
+	if( !L->ListaVacia(Frente) ){
+
+		cout << "Que figura desea cambiar de posicion, utilizar el id: ";
+		cin >> posInicial;
+		cout << "\nEn que posicion, utilizar el id de la figura: ";
+		cin >>posFinal;
+
+		if(posFinal < posInicial || posFinal > posInicial){
+
+			L -> CambiarFiguraDePosicion(Frente,posInicial,posFinal);
+
+		}else if(posInicial == posFinal){
+
+			cout << "\nLa figura ya esta en esa posicion." << endl;
+
+		}
+
+	}else{
+
+		cout << "\n-----Lista Vacia-----" << endl;
+
+	}
+
+}

@@ -32,8 +32,9 @@ public:
 	void Lista_Push(Nodo *&, Nodo *&, FigurasGeometricas *,int);
 	void Lista_Pop(Nodo *&, Nodo *&);
 	void mostrar_lista(Nodo *);
-	void EliminarFiguraSegunId(Nodo *&, int,int);
+	void EliminarFiguraSegunId(Nodo *&, int, int);
 	bool ListaVacia(Nodo *);
+	void CambiarFiguraDePosicion(Nodo *, int, int);
 
 };
 

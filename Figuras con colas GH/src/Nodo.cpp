@@ -198,5 +198,72 @@ void Nodo::EliminarFiguraSegunId(Nodo *&Frente, int eliminar, int M){
 		cout << "\nFigura eliminada correctamente." << endl;
 	}
 };
+void Nodo::CambiarFiguraDePosicion(Nodo *Frente, int PosInicial, int PosFinal){
 
+	Nodo *ptrPosInicial = new Nodo();
+	Nodo *auxptrPosInicial = new Nodo();
+	Nodo *ptrPosFinal = new Nodo();
+	Nodo *auxptrPosFinal = new Nodo();
+	Nodo *auxPF = new Nodo();
+	Nodo *auxPI = new Nodo();
+
+	int auxId;
+
+	ptrPosInicial = Frente;
+	auxptrPosInicial = Frente;
+	ptrPosFinal = Frente;
+	auxptrPosFinal = Frente;
+
+
+	while( ( ptrPosFinal != NULL ) && ( ptrPosFinal -> id != PosFinal ) ){
+
+		auxptrPosFinal = ptrPosFinal;							//Recorro hasta encontrar el nodo con el id que necesito
+		ptrPosFinal = ptrPosFinal -> PtrSiguiente;				//Guardo la posicion y la del nodo anterior,Posicion final en este caso
+		auxPF -> PtrSiguiente = auxptrPosFinal -> PtrSiguiente;
+
+	}
+
+	while( ( ptrPosInicial != NULL ) && ( ptrPosInicial -> id != PosInicial ) ){
+
+		auxptrPosInicial = ptrPosInicial;						//Recorro hasta encontrar el nodo con el id que necesito
+		ptrPosInicial = ptrPosInicial -> PtrSiguiente;			//Guardo la posicion y la del nodo anterior,Posicion inicial en este caso
+		auxPI -> PtrSiguiente = auxptrPosInicial -> PtrSiguiente;
+
+	}
+
+	if( PosInicial > PosFinal ){
+
+		auxptrPosFinal -> PtrSiguiente = auxptrPosInicial -> PtrSiguiente;
+		auxptrPosInicial -> PtrSiguiente = ptrPosInicial -> PtrSiguiente;
+		ptrPosInicial -> PtrSiguiente = auxPF -> PtrSiguiente;
+
+		auxId = ptrPosFinal->getid();
+		ptrPosInicial -> setid(auxId);
+
+		while( ( ptrPosFinal != NULL ) && ( ptrPosFinal->id != (PosInicial+1) ) ){
+
+			auxId = ( ptrPosFinal -> getid() ) + 1;
+			ptrPosFinal -> setid(auxId);
+			ptrPosFinal = ptrPosFinal -> PtrSiguiente;
+		}
+
+	}else if( PosInicial < PosFinal ){
+
+		auxptrPosInicial -> PtrSiguiente = ptrPosInicial -> PtrSiguiente;
+		ptrPosInicial -> PtrSiguiente = ptrPosFinal -> PtrSiguiente;
+		ptrPosFinal -> PtrSiguiente = auxPI -> PtrSiguiente;
+
+		auxId = ptrPosFinal -> getid();
+		ptrPosInicial -> setid(auxId);
+
+		while( ( auxptrPosInicial != NULL ) && ( auxptrPosInicial != ptrPosFinal ) ){
+
+			auxptrPosInicial = auxptrPosInicial -> PtrSiguiente;
+			auxId = ( auxptrPosInicial -> getid() ) - 1;
+			auxptrPosInicial -> setid(auxId);
+
+		}
+
+	}
+};
 

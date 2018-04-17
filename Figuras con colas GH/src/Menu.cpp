@@ -41,7 +41,7 @@ void Menu::OpcionesMenu(){
 			 << "1) Insertar figura en la lista(push-FIFO). " << endl
 			 << "2) Mostrar figuras. " << endl
 		     << "3) Trasladar los ejes de una figura (ver lista y utilizar el id de la figura). " << endl
-		   //<< "4) Cambiar figura de lugar. " << endl
+		     << "4) Cambiar figura de lugar. " << endl
 		     << "5) Eliminar figura segun id." << endl
 			 << "6) Eliminar figura(pop-FIFO)." << endl
 			 << "7) Cuantas figuras hay en total." << endl
@@ -72,12 +72,12 @@ void Menu::OpcionesMenu(){
 				CdF.Trasladar_ejes_figuras(Frente,Lista,CdF.getMaximo());
 				break;
 			}
-/*
-			case 4:
 
+			case 4:{
 
+				CdF.CambiarDePosicionFigura(Frente,Lista);
 				break;
-*/
+			}
 			case 5:{
 
 				CdF.setMaximo(CdF.EliminarCualquierFigura(Frente,Lista,CdF.getMaximo()));
