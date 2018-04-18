@@ -266,15 +266,15 @@ int ControlDeFiguras::EliminarCualquierFigura(Nodo *&Frente, Nodo *L, int M){
 
 
 };
-void ControlDeFiguras::CambiarDePosicionFigura(Nodo *Frente, Nodo *L){
+void ControlDeFiguras::CambiarDePosicionFigura(Nodo *&Frente, Nodo *L){
 
 	int posInicial, posFinal;
 
 	if( !L->ListaVacia(Frente) ){
 
-		cout << "Que figura desea cambiar de posicion, utilizar el id: ";
+		cout << "Que figura desea cambiar de posicion: ";
 		cin >> posInicial;
-		cout << "\nEn que posicion, utilizar el id de la figura: ";
+		cout << "\nEn que posicion: ";
 		cin >>posFinal;
 
 		if(posFinal < posInicial || posFinal > posInicial){

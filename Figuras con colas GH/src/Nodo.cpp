@@ -198,7 +198,7 @@ void Nodo::EliminarFiguraSegunId(Nodo *&Frente, int eliminar, int M){
 		cout << "\nFigura eliminada correctamente." << endl;
 	}
 };
-void Nodo::CambiarFiguraDePosicion(Nodo *Frente, int PosInicial, int PosFinal){
+void Nodo::CambiarFiguraDePosicion(Nodo *&Frente, int PosInicial, int PosFinal){
 
 	Nodo *ptrPosInicial = new Nodo();
 	Nodo *auxptrPosInicial = new Nodo();
@@ -240,7 +240,7 @@ void Nodo::CambiarFiguraDePosicion(Nodo *Frente, int PosInicial, int PosFinal){
 		auxId = ptrPosFinal->getid();
 		ptrPosInicial -> setid(auxId);
 
-		while( ( ptrPosFinal != NULL ) && ( ptrPosFinal->id != (PosInicial+1) ) ){
+		while( ( ptrPosFinal != NULL ) && ( ptrPosFinal->id != (PosInicial+1) ) ){  //cambio los id de cada nodo
 
 			auxId = ( ptrPosFinal -> getid() ) + 1;
 			ptrPosFinal -> setid(auxId);
@@ -249,14 +249,26 @@ void Nodo::CambiarFiguraDePosicion(Nodo *Frente, int PosInicial, int PosFinal){
 
 	}else if( PosInicial < PosFinal ){
 
-		auxptrPosInicial -> PtrSiguiente = ptrPosInicial -> PtrSiguiente;
-		ptrPosInicial -> PtrSiguiente = ptrPosFinal -> PtrSiguiente;
-		ptrPosFinal -> PtrSiguiente = auxPI -> PtrSiguiente;
+
+		if(PosInicial == 0){
+
+			auxptrPosInicial -> PtrSiguiente = Frente;
+			Frente = ptrPosInicial -> PtrSiguiente;
+			ptrPosInicial -> PtrSiguiente = ptrPosFinal -> PtrSiguiente;
+			ptrPosFinal -> PtrSiguiente = auxptrPosInicial -> PtrSiguiente;
+
+		}else{
+
+			auxptrPosInicial -> PtrSiguiente = ptrPosInicial -> PtrSiguiente;
+			ptrPosInicial -> PtrSiguiente = ptrPosFinal -> PtrSiguiente;
+			ptrPosFinal -> PtrSiguiente = auxPI -> PtrSiguiente;
+
+		}
 
 		auxId = ptrPosFinal -> getid();
 		ptrPosInicial -> setid(auxId);
 
-		while( ( auxptrPosInicial != NULL ) && ( auxptrPosInicial != ptrPosFinal ) ){
+		while( ( auxptrPosInicial != NULL ) && ( auxptrPosInicial != ptrPosFinal ) ){   //cambio los id de cada nodo
 
 			auxptrPosInicial = auxptrPosInicial -> PtrSiguiente;
 			auxId = ( auxptrPosInicial -> getid() ) - 1;
