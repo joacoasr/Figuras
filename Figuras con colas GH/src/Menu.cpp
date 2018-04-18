@@ -45,6 +45,8 @@ void Menu::OpcionesMenu(){
 		     << "5) Eliminar figura segun id." << endl
 			 << "6) Eliminar figura(pop-FIFO)." << endl
 			 << "7) Cuantas figuras hay en total." << endl
+			 << "8) Mostrar primer figura de la lista." << endl
+			 << "9) Mostrar la ultima figura de la lista." << endl
 			 << "\nIngrese la opcion:";
 			 cin >> control;
 			//cout << "\n";
@@ -103,6 +105,36 @@ void Menu::OpcionesMenu(){
 				break;
 			}
 
+			case 8:{
+
+				if( CdF.getMaximo() == 0 ){
+
+					cout << "\n-----Lista vacia-----" << endl;
+
+				}else{
+
+					cout << "\nPrimeraFigura: " << endl;
+					Frente -> getFigGeo() -> mostrarDatos();
+
+				}
+
+				break;
+			}
+			case 9:{
+
+				if( CdF.getMaximo() == 0 ){
+
+					cout << "\n-----Lista vacia-----" << endl;
+
+				}else{
+
+					cout << "\nPrimeraFigura: " << endl;
+					Final -> getFigGeo() -> mostrarDatos();
+
+				}
+
+				break;
+			}
 			default:
 
 				cout << "Opcion no valida, intentalo de nuevo xD" << endl;

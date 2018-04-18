@@ -325,6 +325,4 @@ void Nodo::ReubicarFinalDeLaLista(Nodo *Frente, Nodo *&Final, int M){
 
 	}
 
-	cout << "\nId Nodo final: " << Final->id << endl;
-
 }
