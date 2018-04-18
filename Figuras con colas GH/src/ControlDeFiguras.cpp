@@ -49,7 +49,7 @@ void ControlDeFiguras::Trasladar_ejes_figuras(Nodo *Frente,Nodo *L, int MAX){
 
 		}else{
 
-			cout << "\nCon que figura dentro del vector desea interactuar?: ";
+			cout << "\nCon que figura de la lista desea interactuar?: ";
 			cin >> VTid;
 
 			if( ( VTid >= 0 ) && ( VTid < MAX ) ){
@@ -224,7 +224,7 @@ void ControlDeFiguras::MostrarLista(Nodo *Frente, Nodo *L){
 
 };
 
-int ControlDeFiguras::EliminarCualquierFigura(Nodo *&Frente, Nodo *L, int M){
+int ControlDeFiguras::EliminarCualquierFigura(Nodo *&Frente,Nodo *&Final, Nodo *L, int M){
 
 	int eliminar, control = -1;
 
@@ -244,8 +244,9 @@ int ControlDeFiguras::EliminarCualquierFigura(Nodo *&Frente, Nodo *L, int M){
 					M--;
 
 				}
-				control = 0;
 
+				L->ReubicarFinalDeLaLista(Frente,Final,M);
+				control = 0;
 
 			}else{
 
@@ -262,35 +263,42 @@ int ControlDeFiguras::EliminarCualquierFigura(Nodo *&Frente, Nodo *L, int M){
 		}
 
 	}
+
 	return M;
 
-
 };
-void ControlDeFiguras::CambiarDePosicionFigura(Nodo *&Frente, Nodo *L, int M){
+void ControlDeFiguras::CambiarDePosicionFigura(Nodo *&Frente, Nodo *&Final, Nodo *L, int M){
 
 	int posInicial, posFinal;
 
 	if( !L->ListaVacia(Frente) ){
 
-		cout << "Que figura desea cambiar de posicion: ";
-		cin >> posInicial;
-		cout << "\nEn que posicion: ";
-		cin >>posFinal;
+		if( M > 1 ){
 
-		if( (posFinal < posInicial || posFinal > posInicial) && (posFinal < M) && (posInicial < M) ){
+			cout << "\nQue figura desea cambiar de posicion: ";
+			cin >> posInicial;
+			cout << "\nEn que posicion: ";
+			cin >>posFinal;
 
-			L -> CambiarFiguraDePosicion(Frente,posInicial,posFinal);
+			if( (posFinal < posInicial || posFinal > posInicial) && (posFinal < M) && (posInicial < M) ){
 
-		}else if( (posInicial == posFinal) && (posFinal < M) && (posInicial < M) ){
+				L -> CambiarFiguraDePosicion(Frente,posInicial,posFinal);
+				L->ReubicarFinalDeLaLista(Frente,Final,M);
 
-			cout << "\nLa figura ya esta en esa posicion." << endl;
+			}else if( (posInicial == posFinal) && (posFinal < M) && (posInicial < M) ){
 
-			}else if( (posFinal >= M) || (posInicial >= M) || (posFinal < 0) || (posInicial < 0)){
+				  	  cout << "\nLa figura ya esta en esa posicion." << endl;
 
-				cout << "\nNo existe/n figura/s con ese id." << endl;
+				  }else if( (posFinal >= M) || (posInicial >= M) || (posFinal < 0) || (posInicial < 0)){
 
-			}
+					  	  cout << "\nNo existe/n figura/s con ese id." << endl;
 
+					    }
+		}else{
+
+			cout<< "\nSolo hay una figura en la lista." << endl;
+
+		}
 	}else{
 
 		cout << "\n-----Lista Vacia-----" << endl;

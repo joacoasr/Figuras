@@ -35,11 +35,11 @@ class ControlDeFiguras {
 		virtual ~ControlDeFiguras();
 		FigurasGeometricas *Crear_Figuras_Geometricas();
 		void Trasladar_ejes_figuras(Nodo *,Nodo *,int);
-		int EliminarCualquierFigura(Nodo *&, Nodo *, int );
+		int EliminarCualquierFigura(Nodo *&,Nodo *&, Nodo *, int );
 		int InsertarFiguraEnLaLista(Nodo *&, Nodo *&,Nodo *,int ,ControlDeFiguras);
 		int EliminarFiguraDeLaLista(Nodo *&, Nodo *&, Nodo *,int );
 		void MostrarLista(Nodo *,Nodo *);
-		void CambiarDePosicionFigura(Nodo *&,Nodo *,int);
+		void CambiarDePosicionFigura(Nodo *&,Nodo *&,Nodo *,int);
 
 };
 

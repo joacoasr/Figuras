@@ -35,6 +35,7 @@ public:
 	void EliminarFiguraSegunId(Nodo *&, int, int);
 	bool ListaVacia(Nodo *);
 	void CambiarFiguraDePosicion(Nodo *&, int, int);
+	void ReubicarFinalDeLaLista(Nodo *, Nodo *&, int);
 
 };
 

@@ -308,4 +308,23 @@ void Nodo::CambiarFiguraDePosicion(Nodo *&Frente, int PosInicial, int PosFinal){
 
 	}
 };
+void Nodo::ReubicarFinalDeLaLista(Nodo *Frente, Nodo *&Final, int M){
 
+	Nodo *actual = new Nodo();
+	actual = Frente;
+
+
+	while ( actual != NULL ){
+
+		if( ( actual -> getid() == ( M - 1 ) ) ){
+
+			Final = actual;
+
+		}
+		actual = actual -> PtrSiguiente;
+
+	}
+
+	cout << "\nId Nodo final: " << Final->id << endl;
+
+}

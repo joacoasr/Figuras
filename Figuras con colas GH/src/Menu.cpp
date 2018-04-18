@@ -75,12 +75,12 @@ void Menu::OpcionesMenu(){
 
 			case 4:{
 
-				CdF.CambiarDePosicionFigura(Frente,Lista,CdF.getMaximo());
+				CdF.CambiarDePosicionFigura(Frente,Final,Lista,CdF.getMaximo());
 				break;
 			}
 			case 5:{
 
-				CdF.setMaximo(CdF.EliminarCualquierFigura(Frente,Lista,CdF.getMaximo()));
+				CdF.setMaximo(CdF.EliminarCualquierFigura(Frente,Final,Lista,CdF.getMaximo()));
 				break;
 			}
 			case 6:{
@@ -91,7 +91,15 @@ void Menu::OpcionesMenu(){
 
 			case 7:{
 
-				cout << "\nHay " <<  CdF.getMaximo() << " figura/s. " <<  endl;
+				if( CdF.getMaximo() == 0 ){
+
+					cout << "\n-----Lista vacia-----" << endl;
+
+				}else{
+
+					cout << "\nHay " <<  CdF.getMaximo() << " figura/s. " <<  endl;
+
+				}
 				break;
 			}
 
