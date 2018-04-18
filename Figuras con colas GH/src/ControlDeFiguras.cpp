@@ -266,7 +266,7 @@ int ControlDeFiguras::EliminarCualquierFigura(Nodo *&Frente, Nodo *L, int M){
 
 
 };
-void ControlDeFiguras::CambiarDePosicionFigura(Nodo *&Frente, Nodo *L){
+void ControlDeFiguras::CambiarDePosicionFigura(Nodo *&Frente, Nodo *L, int M){
 
 	int posInicial, posFinal;
 
@@ -277,15 +277,19 @@ void ControlDeFiguras::CambiarDePosicionFigura(Nodo *&Frente, Nodo *L){
 		cout << "\nEn que posicion: ";
 		cin >>posFinal;
 
-		if(posFinal < posInicial || posFinal > posInicial){
+		if( (posFinal < posInicial || posFinal > posInicial) && (posFinal < M) && (posInicial < M) ){
 
 			L -> CambiarFiguraDePosicion(Frente,posInicial,posFinal);
 
-		}else if(posInicial == posFinal){
+		}else if( (posInicial == posFinal) && (posFinal < M) && (posInicial < M) ){
 
 			cout << "\nLa figura ya esta en esa posicion." << endl;
 
-		}
+			}else if( (posFinal >= M) || (posInicial >= M) || (posFinal < 0) || (posInicial < 0)){
+
+				cout << "\nNo existe/n figura/s con ese id." << endl;
+
+			}
 
 	}else{
 

@@ -75,7 +75,7 @@ void Menu::OpcionesMenu(){
 
 			case 4:{
 
-				CdF.CambiarDePosicionFigura(Frente,Lista);
+				CdF.CambiarDePosicionFigura(Frente,Lista,CdF.getMaximo());
 				break;
 			}
 			case 5:{

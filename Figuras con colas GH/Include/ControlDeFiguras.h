@@ -39,7 +39,7 @@ class ControlDeFiguras {
 		int InsertarFiguraEnLaLista(Nodo *&, Nodo *&,Nodo *,int ,ControlDeFiguras);
 		int EliminarFiguraDeLaLista(Nodo *&, Nodo *&, Nodo *,int );
 		void MostrarLista(Nodo *,Nodo *);
-		void CambiarDePosicionFigura(Nodo *&,Nodo *);
+		void CambiarDePosicionFigura(Nodo *&,Nodo *,int);
 
 };
 
