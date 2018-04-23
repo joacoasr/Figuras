@@ -52,3 +52,8 @@ FigurasGeometricas *TrianguloFactory::CrearFigura(){
 	return FG;
 
 }
+void TrianguloFactory::mostrarFiguraACrear(){
+
+	cout << "\nFigura a crear: Triangulo." << endl;
+
+};

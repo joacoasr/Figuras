@@ -23,6 +23,7 @@ class TrianguloFactory:public FigureFactory {
 		//TrianguloFactory();
 		virtual ~TrianguloFactory();
 		FigurasGeometricas *CrearFigura();
+		void mostrarFiguraACrear();
 
 };
 

@@ -159,6 +159,7 @@ FigurasGeometricas * ControlDeFiguras::Crear_Figuras_Geometricas(){
 
 					RectanguloFactory RF;
 
+					RF.mostrarFiguraACrear();
 					FG = RF . CrearFigura();
 
 					break;
@@ -167,6 +168,7 @@ FigurasGeometricas * ControlDeFiguras::Crear_Figuras_Geometricas(){
 
 					TrianguloFactory TF;
 
+					TF.mostrarFiguraACrear();
 					FG = TF . CrearFigura();
 
 					break;
@@ -175,6 +177,7 @@ FigurasGeometricas * ControlDeFiguras::Crear_Figuras_Geometricas(){
 
 					CirculoFactory CF;
 
+					CF.mostrarFiguraACrear();
 					FG = CF . CrearFigura();
 
 					break;
@@ -247,7 +250,7 @@ void ControlDeFiguras::SwapFiguras(FigurasGeometricas *FiGe[], int n){
 
 void ControlDeFiguras::MoverFiguraDePosicion(FigurasGeometricas *FiGe[], int n){
 
-	int i,j, ValorInicial = 1, ValorFinal = 1;
+	int i, ValorInicial = 1, ValorFinal = 1;
 	FigurasGeometricas *aux;
 
 	if( n > 1 ){
@@ -261,22 +264,35 @@ void ControlDeFiguras::MoverFiguraDePosicion(FigurasGeometricas *FiGe[], int n){
 
 			if( ( ValorInicial > 0 ) && ( ValorFinal > 0 ) && ( ValorInicial <= n ) && ( ValorFinal <= n ) ){
 
-				for( i = 0 ; i < n ; i++ ){
+				if( ValorFinal < ValorInicial ){
 
-					if ( i == ( ValorFinal - 1 ) ){
+					aux = FiGe[ValorInicial-1];
 
-						aux = FiGe[i];
-						FiGe[i] = FiGe[ValorInicial - 1];
+					for( i = ( ValorInicial - 1 ) ; i > ( ValorFinal - 1 ) ; i-- ){
 
-						for( j = ( ValorInicial - 1 ) ; j > ValorFinal ; j-- ){
-
-							FiGe[j] = FiGe[j - 1];
-
-						}
-
-						FiGe[ValorFinal] = aux;
+						FiGe[i] = FiGe[i - 1];
 
 					}
+
+					FiGe[ValorFinal-1] = aux;
+
+				}
+				if( ValorFinal > ValorInicial ){
+
+					aux = FiGe[ValorInicial-1];
+
+					for( i = ( ValorInicial - 1 ) ; i < ( ValorFinal - 1) ; i++ ){
+
+						FiGe[i] = FiGe[i+1];
+
+					}
+					FiGe[ValorFinal-1] = aux;
+
+				}
+				if( ValorInicial == ValorFinal ){
+
+					cout << "\nLa Figura ya esta en esa posicion." << endl;
+
 				}
 				ValorInicial = -1;
 				ValorFinal = -1;

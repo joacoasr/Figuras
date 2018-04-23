@@ -25,7 +25,7 @@ class CirculoFactory:public FigureFactory {
 		//CirculoFactory();
 		virtual ~CirculoFactory();
 		FigurasGeometricas *CrearFigura();
-
+		void mostrarFiguraACrear();
 
 };
 
