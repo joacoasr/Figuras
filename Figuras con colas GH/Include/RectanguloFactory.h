@@ -23,6 +23,7 @@ class RectanguloFactory:public FigureFactory {
 		//RectanguloFactory();
 		virtual ~RectanguloFactory();
 		FigurasGeometricas *CrearFigura();
+		void MostrarFiguraACrear();
 };
 
 #endif /* RECTANGULOFACTORY_H_ */
