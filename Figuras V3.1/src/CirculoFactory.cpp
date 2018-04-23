@@ -49,3 +49,8 @@ FigurasGeometricas *CirculoFactory::CrearFigura(){
 	return FG;
 
 }
+void CirculoFactory::mostrarFiguraACrear(){
+
+	cout << "\nFigura a crear: Circulo." << endl;
+
+};

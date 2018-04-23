@@ -20,6 +20,7 @@ class FigureFactory {
 		//FigureFactory();
 		virtual ~FigureFactory();
 		virtual FigurasGeometricas *CrearFigura() = 0;
+		virtual void MostrarFiguraACrear() = 0;
 };
 
 #endif /* FIGUREFACTORY_H_ */

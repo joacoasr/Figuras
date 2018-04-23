@@ -155,6 +155,7 @@ FigurasGeometricas * ControlDeFiguras::Crear_Figuras_Geometricas(){
 
 					RectanguloFactory RF;
 
+					RF.MostrarFiguraACrear();
 					FG = RF . CrearFigura();
 
 					break;
@@ -163,6 +164,7 @@ FigurasGeometricas * ControlDeFiguras::Crear_Figuras_Geometricas(){
 
 					TrianguloFactory TF;
 
+					TF.MostrarFiguraACrear();
 					FG = TF . CrearFigura();
 
 					break;
@@ -171,6 +173,7 @@ FigurasGeometricas * ControlDeFiguras::Crear_Figuras_Geometricas(){
 
 					CirculoFactory CF;
 
+					CF.MostrarFiguraACrear();
 					FG = CF . CrearFigura();
 
 					break;

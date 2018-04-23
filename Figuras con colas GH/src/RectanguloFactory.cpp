@@ -52,3 +52,8 @@ FigurasGeometricas *RectanguloFactory::CrearFigura(){
 	return FG;
 
 }
+void RectanguloFactory::MostrarFiguraACrear(){
+
+	cout << "\nFigura a crear: Rectangulo. " << endl;
+
+};
