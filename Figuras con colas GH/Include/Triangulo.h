@@ -15,7 +15,7 @@ class Triangulo:public FigurasGeometricas{
 
 	private:
 
-		float PuntoX1, PuntoY1, PuntoX2, PuntoY2, PuntoX3, PuntoY3;
+		float X1, Y1, X2, Y2, X3, Y3;
 
 	public:
 

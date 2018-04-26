@@ -15,7 +15,7 @@ class Circulo:public FigurasGeometricas {
 
 	private:
 
-		float coordenadaX, coordenadaY, radio;
+		float X, Y, radio;
 
 	public:
 
