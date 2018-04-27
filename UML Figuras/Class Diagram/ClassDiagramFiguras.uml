@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Circulo="http:///schemas/Circulo/_1SLP00nKEeikJsNEO7cimg/0" xmlns:CirculoFactory="http:///schemas/CirculoFactory/_nebWoEnLEeikJsNEO7cimg/0" xmlns:ControlDeFiguras="http:///schemas/ControlDeFiguras/_GKOAcEnKEeikJsNEO7cimg/0" xmlns:FigurasGeometricas="http:///schemas/FigurasGeometricas/_ngsc8EnKEeikJsNEO7cimg/1" xmlns:FigureFactory="http:///schemas/FigureFactory/_SA9k8UnKEeikJsNEO7cimg/1" xmlns:Menu="http:///schemas/Menu/_BL66cEnKEeikJsNEO7cimg/0" xmlns:Nodo="http:///schemas/Nodo/_HBE6gknLEeikJsNEO7cimg/0" xmlns:Punto="http:///schemas/Punto/_CqyPsEnLEeikJsNEO7cimg/0" xmlns:Rectangulo="http:///schemas/Rectangulo/_4U0hcUnKEeikJsNEO7cimg/0" xmlns:RectanguloFactory="http:///schemas/RectanguloFactory/_p-opkUnLEeikJsNEO7cimg/0" xmlns:Triangulo="http:///schemas/Triangulo/__5i3IEnKEeikJsNEO7cimg/0" xmlns:TrianguloFactory="http:///schemas/TrianguloFactory/_tmb2sEnLEeikJsNEO7cimg/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/Circulo/_1SLP00nKEeikJsNEO7cimg/0 Circulo.profile.uml#_1SL24UnKEeikJsNEO7cimg http:///schemas/CirculoFactory/_nebWoEnLEeikJsNEO7cimg/0 CirculoFactory.profile.uml#_nebWoknLEeikJsNEO7cimg http:///schemas/ControlDeFiguras/_GKOAcEnKEeikJsNEO7cimg/0 ControlDeFiguras.profile.uml#_GKOAcknKEeikJsNEO7cimg http:///schemas/FigurasGeometricas/_ngsc8EnKEeikJsNEO7cimg/1 FigurasGeometricas.profile.uml#_ngsc8UnKEeikJsNEO7cimg http:///schemas/FigureFactory/_SA9k8UnKEeikJsNEO7cimg/1 FigureFactory.profile.uml#_SA-MAEnKEeikJsNEO7cimg http:///schemas/Menu/_BL66cEnKEeikJsNEO7cimg/0 Menu.profile.uml#_BL66cknKEeikJsNEO7cimg http:///schemas/Nodo/_HBE6gknLEeikJsNEO7cimg/0 Nodo.profile.uml#_HBE6hEnLEeikJsNEO7cimg http:///schemas/Punto/_CqyPsEnLEeikJsNEO7cimg/0 Punto.profile.uml#_CqyPsknLEeikJsNEO7cimg http:///schemas/Rectangulo/_4U0hcUnKEeikJsNEO7cimg/0 Rectangulo.profile.uml#_4U0hc0nKEeikJsNEO7cimg http:///schemas/RectanguloFactory/_p-opkUnLEeikJsNEO7cimg/0 RectanguloFactory.profile.uml#_p-opk0nLEeikJsNEO7cimg http:///schemas/Triangulo/__5i3IEnKEeikJsNEO7cimg/0 Triangulo.profile.uml#__5i3IknKEeikJsNEO7cimg http:///schemas/TrianguloFactory/_tmb2sEnLEeikJsNEO7cimg/0 TrianguloFactory.profile.uml#_tmb2sknLEeikJsNEO7cimg">
+  <uml:Model xmi:id="_PCBAQEkJEeiZZuJPVhqdJA" name="Modelo">
+    <packagedElement xmi:type="uml:Package" xmi:id="_cA2XgEm0EeiL4O1-3jkSVA" name="Package1">
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_nRCgEEm5EeiL4O1-3jkSVA">
+        <importedPackage xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+      </packageImport>
+      <packagedElement xmi:type="uml:Class" xmi:id="_oEatUEmDEeiL4O1-3jkSVA" name="Nodo">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_3u2l4EmDEeiL4O1-3jkSVA" name="id" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="__lkqgEmDEeiL4O1-3jkSVA" name="FiGe" visibility="private" type="_E1KTAEm_EeiL4O1-3jkSVA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ECsWEEmEEeiL4O1-3jkSVA" name="ptrSiguiente" visibility="private" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_SHPO4EmEEeiL4O1-3jkSVA" name="~Nodo"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_l64YgEmEEeiL4O1-3jkSVA" name="getid">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_pXoMMEmEEeiL4O1-3jkSVA" name="id" visibility="private" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_0qpYkEmEEeiL4O1-3jkSVA" name="getNodo">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_4LuSoEmEEeiL4O1-3jkSVA" visibility="private" type="_oEatUEmDEeiL4O1-3jkSVA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="__vCTEEmEEeiL4O1-3jkSVA" name="getFigGeo">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_xhJZwEnAEeiL4O1-3jkSVA" type="_E1KTAEm_EeiL4O1-3jkSVA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_EgIqkEmFEeiL4O1-3jkSVA" name="setid">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_gLcCEEmHEeiL4O1-3jkSVA" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_jLocoEmHEeiL4O1-3jkSVA" name="setNodo">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_nALFQEmHEeiL4O1-3jkSVA" name="ptrSiguiente" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_p752kEmHEeiL4O1-3jkSVA" name="setFigurasGeometricas">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_rsXuoEmHEeiL4O1-3jkSVA" name="FiGe" type="_E1KTAEm_EeiL4O1-3jkSVA"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_7QOeEEmHEeiL4O1-3jkSVA" name="Lista_Push">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="___Y74EmHEeiL4O1-3jkSVA" name="Frente" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_BdfRkEmIEeiL4O1-3jkSVA" name="Final" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_DKbUgEmIEeiL4O1-3jkSVA" name="FigGeo" type="_E1KTAEm_EeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_J_d5sEmIEeiL4O1-3jkSVA" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_PtSYIEmIEeiL4O1-3jkSVA" name="Lista_Pop">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Uz_MMEmIEeiL4O1-3jkSVA" name="Frente" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_WBObYEmIEeiL4O1-3jkSVA" name="Final" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_ZKTsMEmIEeiL4O1-3jkSVA" name="mostrar_lista">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_aq4uIEmIEeiL4O1-3jkSVA" name="Frente" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_jj0dsEmIEeiL4O1-3jkSVA" name="EliminarFiguraSegunId">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_lBYn4EmIEeiL4O1-3jkSVA" name="Frente" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_pbVDoEmIEeiL4O1-3jkSVA" name="eliminar">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_8qtpoEmIEeiL4O1-3jkSVA" name="M">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="__d3twEmIEeiL4O1-3jkSVA" name="ListaVacia">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_A8jSQEmJEeiL4O1-3jkSVA" name="Frente" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_EEIuQEmJEeiL4O1-3jkSVA" name="CambiarFiguraDePosicion">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_FrLkkEmJEeiL4O1-3jkSVA" name="Frente" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_HLHGQEmJEeiL4O1-3jkSVA" name="PosFinal">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_ItuvkEmJEeiL4O1-3jkSVA" name="PosInicial">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_YCdBYEmKEeiL4O1-3jkSVA" name="ReubicarFinalDeLaLista">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_aIVv0EmKEeiL4O1-3jkSVA" name="Frente" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_bVOZsEmKEeiL4O1-3jkSVA" name="Final" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_ceaPUEmKEeiL4O1-3jkSVA" name="M">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_qsE-0ElREeiL4O1-3jkSVA" name="RectanguloFactory">
+        <generalization xmi:type="uml:Generalization" xmi:id="_-6-sMEnBEeiL4O1-3jkSVA" general="_5wZlEEm-EeiL4O1-3jkSVA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_YxAwskmvEeiL4O1-3jkSVA" name="punto" type="_0g7VUElXEeiL4O1-3jkSVA" association="_YxAJoEmvEeiL4O1-3jkSVA">
+          <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_brDDcEmwEeiL4O1-3jkSVA" value="4"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a8etQEmwEeiL4O1-3jkSVA" value="4"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_UkVc4ElXEeiL4O1-3jkSVA" name="~RectanguloFactory"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_UtbHcElXEeiL4O1-3jkSVA" name="CrearFigura">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_hh_mIElXEeiL4O1-3jkSVA" type="_E1KTAEm_EeiL4O1-3jkSVA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_U5LEcElXEeiL4O1-3jkSVA" name="MostrarFiguraACrear"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_q92UYEmKEeiL4O1-3jkSVA" name="Menu">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_T-4Ss0mUEeiL4O1-3jkSVA" name="controldefiguras" type="_qthZYEmKEeiL4O1-3jkSVA" association="_T-4SsEmUEeiL4O1-3jkSVA"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_alamAEmNEeiL4O1-3jkSVA" name="Menu()"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_dU0LgEmNEeiL4O1-3jkSVA" name="~Menu"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_e-jwgEmNEeiL4O1-3jkSVA" name="OpcionesMenu"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_qthZYEmKEeiL4O1-3jkSVA" name="ControlDeFiguras">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_fYzAAEmOEeiL4O1-3jkSVA" name="MAX" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_du0UM0m_EeiL4O1-3jkSVA" name="figurasgeometricas" type="_E1KTAEm_EeiL4O1-3jkSVA" association="_du0UMEm_EeiL4O1-3jkSVA">
+          <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6lEt0Em_EeiL4O1-3jkSVA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_59tL0Em_EeiL4O1-3jkSVA" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_6Tpp00nDEeiL4O1-3jkSVA" name="figurefactory" type="_5wZlEEm-EeiL4O1-3jkSVA" association="_6Tpp0EnDEeiL4O1-3jkSVA">
+          <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__1BnsEnDEeiL4O1-3jkSVA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__IIsgEnDEeiL4O1-3jkSVA" value="*"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_lqBGcEmOEeiL4O1-3jkSVA" name="setMaximo">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_od3HEEmOEeiL4O1-3jkSVA" name="M">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_q5bKkEmOEeiL4O1-3jkSVA" name="getMaximo">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_swfZ4EmOEeiL4O1-3jkSVA" name="M" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_uoD_gEmOEeiL4O1-3jkSVA" name="~ControlDeFiguras"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_6zkTEEmOEeiL4O1-3jkSVA" name="Crear_Figuras_Geometricas">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_-be08EmOEeiL4O1-3jkSVA" name="FiGe" type="_E1KTAEm_EeiL4O1-3jkSVA"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_Wn-OIEmPEeiL4O1-3jkSVA" name="Trasladar_ejes_figuras">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_YHAX8EmPEeiL4O1-3jkSVA" name="Frente" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZZ-bsEmPEeiL4O1-3jkSVA" name="Lista" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_bWkEMEmPEeiL4O1-3jkSVA" name="M">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_FE68MEmREeiL4O1-3jkSVA" name="EliminarCualquierFigura">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_JUeF0EmREeiL4O1-3jkSVA" name="Max" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_OhBqQEmREeiL4O1-3jkSVA" name="Frente" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_P6VmkEmREeiL4O1-3jkSVA" name="Final" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_RKm7oEmREeiL4O1-3jkSVA" name="Lista" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_TFbpkEmREeiL4O1-3jkSVA" name="M">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_eAwHoEmREeiL4O1-3jkSVA" name="InsertarFiguraEnLaLista" visibility="public">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_fn_yQEmREeiL4O1-3jkSVA" name="Frente" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_g-V6IEmREeiL4O1-3jkSVA" name="Final" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_iP5ooEmREeiL4O1-3jkSVA" name="Lista" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_kJ-IoEmREeiL4O1-3jkSVA" name="M">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_lpQxIEmREeiL4O1-3jkSVA" name="FigGeo" type="_E1KTAEm_EeiL4O1-3jkSVA"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_np_SwEmREeiL4O1-3jkSVA" name="EliminarFiguraDeLaLista">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_o-Ew0EmREeiL4O1-3jkSVA" name="Frente" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_sabi8EmREeiL4O1-3jkSVA" name="Final" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_uHUikEmREeiL4O1-3jkSVA" name="Lista" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_wNwqoEmREeiL4O1-3jkSVA" name="M">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_xyLqwEmREeiL4O1-3jkSVA" name="Max" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_1nAnQEmREeiL4O1-3jkSVA" name="MostrarLista">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_3bpNoEmREeiL4O1-3jkSVA" name="Frente" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_4kMxIEmREeiL4O1-3jkSVA" name="Lista" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_6-trwEmREeiL4O1-3jkSVA" name="CambiarDePosicionFigura">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_8eO9wEmREeiL4O1-3jkSVA" name="Frente" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_-VKDIEmREeiL4O1-3jkSVA" name="Final" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="__0ThsEmREeiL4O1-3jkSVA" name="Lista" type="_oEatUEmDEeiL4O1-3jkSVA"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_AovPUEmSEeiL4O1-3jkSVA" name="M">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9D8mQEkKEeiZZuJPVhqdJA" name="Rectangulo">
+        <generalization xmi:type="uml:Generalization" xmi:id="_9eguMEnBEeiL4O1-3jkSVA" general="_E1KTAEm_EeiL4O1-3jkSVA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_sG910EkMEeiZZuJPVhqdJA" name="Xp1" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_sV_wUEkMEeiZZuJPVhqdJA" name="Yp1" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_slHKYEkMEeiZZuJPVhqdJA" name="Xp2" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_syjJcEkMEeiZZuJPVhqdJA" name="Yp2" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_s-6KcEkMEeiZZuJPVhqdJA" name="Xp3" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tLgcAEkMEeiZZuJPVhqdJA" name="Yp3" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tXUqcEkMEeiZZuJPVhqdJA" name="Xp4" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tpFv4EkMEeiZZuJPVhqdJA" name="Yp4" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_vMeYwEkNEeiZZuJPVhqdJA" name="Rectangulo">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_zBoFYEkNEeiZZuJPVhqdJA" name="X1" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_-RAH4EkNEeiZZuJPVhqdJA" name="Y1" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="__5RGMEkNEeiZZuJPVhqdJA" name="X2" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Bg1g8EkOEeiZZuJPVhqdJA" name="Y2" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_DUiTMEkOEeiZZuJPVhqdJA" name="X3" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_F96wQEkOEeiZZuJPVhqdJA" name="Y3" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_H6ULgEkOEeiZZuJPVhqdJA" name="X4" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_JfJbUEkOEeiZZuJPVhqdJA" name="Y4" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_gLaX4EkOEeiZZuJPVhqdJA" name="~Rectangulo"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_lcjhYEkOEeiZZuJPVhqdJA" name="mostrarDatos"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_pHoE8EkOEeiZZuJPVhqdJA" name="TrasladarEjeX">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_HjR5oEkQEeiZZuJPVhqdJA" name="X">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_c8MX8EkQEeiZZuJPVhqdJA" name="TrasladarEjeY">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_irxJ4EkQEeiZZuJPVhqdJA" name="Y">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_0g7VUElXEeiL4O1-3jkSVA" name="Punto">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="__Rzd8ElXEeiL4O1-3jkSVA" name="X" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="__oUggElXEeiL4O1-3jkSVA" name="Y" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="__y_fcElXEeiL4O1-3jkSVA" name="radio" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_lXQ1cEmBEeiL4O1-3jkSVA" name="~Punto"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mUnOgEmBEeiL4O1-3jkSVA" name="getPuntoX">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_bk7RUEmEEeiL4O1-3jkSVA" name="X" visibility="private" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_pe3kAEmBEeiL4O1-3jkSVA" name="getPuntoY" visibility="public">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_fHvQwEmEEeiL4O1-3jkSVA" name="Y" visibility="private" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_trumAEmBEeiL4O1-3jkSVA" name="getRadio">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_hNnYIEmEEeiL4O1-3jkSVA" name="radio" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_vjgnAEmBEeiL4O1-3jkSVA" name="setPuntoX">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_xlFdMEmBEeiL4O1-3jkSVA" name="X">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_7a9WIEmBEeiL4O1-3jkSVA" name="setPuntoY">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_-X0I0EmBEeiL4O1-3jkSVA" name="Y">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="__5D5IEmBEeiL4O1-3jkSVA" name="setRadio">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Br6W0EmCEeiL4O1-3jkSVA" name="radio">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_qSlgwElREeiL4O1-3jkSVA" name="CirculoFactory">
+        <generalization xmi:type="uml:Generalization" xmi:id="_-ht3oEnBEeiL4O1-3jkSVA" general="_5wZlEEm-EeiL4O1-3jkSVA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_YVwYE0mvEeiL4O1-3jkSVA" name="punto" type="_0g7VUElXEeiL4O1-3jkSVA" association="_YVwYEEmvEeiL4O1-3jkSVA">
+          <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xue64EmvEeiL4O1-3jkSVA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wst74EmvEeiL4O1-3jkSVA" value="1"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_KCgc4ElXEeiL4O1-3jkSVA" name="~CirculoFactory"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_KPvAkElXEeiL4O1-3jkSVA" name="CrearFigura" visibility="public">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_B5PCgEnBEeiL4O1-3jkSVA" type="_E1KTAEm_EeiL4O1-3jkSVA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_Kdqu4ElXEeiL4O1-3jkSVA" name="MostrarFiguraACrear"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_8bllwEkKEeiZZuJPVhqdJA" name="Triangulo">
+        <generalization xmi:type="uml:Generalization" xmi:id="_-JwqoEnBEeiL4O1-3jkSVA" general="_E1KTAEm_EeiL4O1-3jkSVA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_asCoUEkSEeiZZuJPVhqdJA" name="X1" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_a4ZpUEkSEeiZZuJPVhqdJA" name="Y1" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_bHWrUEkSEeiZZuJPVhqdJA" name="X2" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_bVo-8EkSEeiZZuJPVhqdJA" name="Y2" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_bi1GYEkSEeiZZuJPVhqdJA" name="X3" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_bwNbEEkSEeiZZuJPVhqdJA" name="Y3" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_iW-eQEkTEeiZZuJPVhqdJA" name="Triangulo">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_nrYXIEkTEeiZZuJPVhqdJA" name="X1">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_pAcFkEkTEeiZZuJPVhqdJA" name="Y1">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_qMbXkEkTEeiZZuJPVhqdJA" name="X2">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_rbCfwEkTEeiZZuJPVhqdJA" name="Y2">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_s5nWkEkTEeiZZuJPVhqdJA" name="X3">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_uTf6oEkTEeiZZuJPVhqdJA" name="Y3">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_xq-z0EkTEeiZZuJPVhqdJA" name="~Triangulo"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_z9KR0EkTEeiZZuJPVhqdJA" name="mostrarDatos()"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_0n6fAEkTEeiZZuJPVhqdJA" name="TrasladarEjeX">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_5pSHIEkTEeiZZuJPVhqdJA" name="X">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_7pRB4EkTEeiZZuJPVhqdJA" name="TrasladarEjeY">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_9g-KYEkTEeiZZuJPVhqdJA" name="Y">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rAg9wElREeiL4O1-3jkSVA" name="TrianguloFactory">
+        <generalization xmi:type="uml:Generalization" xmi:id="__UHk8EnBEeiL4O1-3jkSVA" general="_5wZlEEm-EeiL4O1-3jkSVA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ZJgwQUmvEeiL4O1-3jkSVA" name="punto" type="_0g7VUElXEeiL4O1-3jkSVA" association="_ZJgJMEmvEeiL4O1-3jkSVA">
+          <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_djaTQEmwEeiL4O1-3jkSVA" value="3"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c6n08EmwEeiL4O1-3jkSVA" value="3"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_VNr74ElXEeiL4O1-3jkSVA" name="~TrianguloFactory"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_VZ06cElXEeiL4O1-3jkSVA" name="CrearFigura">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_qDH5sElXEeiL4O1-3jkSVA" type="_E1KTAEm_EeiL4O1-3jkSVA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_VmdBMElXEeiL4O1-3jkSVA" name="MostrarFiguraACrear"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9Vj6sEkKEeiZZuJPVhqdJA" name="Circulo">
+        <generalization xmi:type="uml:Generalization" xmi:id="_83iNwEnBEeiL4O1-3jkSVA" general="_E1KTAEm_EeiL4O1-3jkSVA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_s069cEkLEeiZZuJPVhqdJA" name="X" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x5Py8EkLEeiZZuJPVhqdJA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x5SPMEkLEeiZZuJPVhqdJA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tH-cUEkLEeiZZuJPVhqdJA" name="Y" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tgtFYEkLEeiZZuJPVhqdJA" name="radio" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_CdaI0EkMEeiZZuJPVhqdJA" name="mostrarDatos"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_DI_ccEkMEeiZZuJPVhqdJA" name="TrasladarEjeX">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Pr900EkMEeiZZuJPVhqdJA" name="X" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_EN9gcEkMEeiZZuJPVhqdJA" name="TrasladarEjeY">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_bPPDsEkMEeiZZuJPVhqdJA" name="Y" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_SmHcUEkNEeiZZuJPVhqdJA" name="Circulo" visibility="public">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_aNy_YEkNEeiZZuJPVhqdJA" name="X" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_exEWQEkNEeiZZuJPVhqdJA" name="Y" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_jTjC8EkNEeiZZuJPVhqdJA" name="radio" visibility="public">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mbcA8EkNEeiZZuJPVhqdJA" name="~Circulo"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_T-4SsEmUEeiL4O1-3jkSVA" memberEnd="_T-4Ss0mUEeiL4O1-3jkSVA _T-5g0EmUEeiL4O1-3jkSVA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_T-4SsUmUEeiL4O1-3jkSVA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_T-4SskmUEeiL4O1-3jkSVA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_T-5g0EmUEeiL4O1-3jkSVA" name="menu" type="_q92UYEmKEeiL4O1-3jkSVA" association="_T-4SsEmUEeiL4O1-3jkSVA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_4I4_EEmaEeiL4O1-3jkSVA" memberEnd="_4I4_E0maEeiL4O1-3jkSVA _4I4_FEmaEeiL4O1-3jkSVA" navigableOwnedEnd="_4I4_E0maEeiL4O1-3jkSVA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4I4_EUmaEeiL4O1-3jkSVA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4I4_EkmaEeiL4O1-3jkSVA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_4I4_FEmaEeiL4O1-3jkSVA" name="controldefiguras" type="_qthZYEmKEeiL4O1-3jkSVA" association="_4I4_EEmaEeiL4O1-3jkSVA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_4I4_E0maEeiL4O1-3jkSVA" name="nodo" type="_oEatUEmDEeiL4O1-3jkSVA" association="_4I4_EEmaEeiL4O1-3jkSVA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CAfWUEmbEeiL4O1-3jkSVA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CAhykEmbEeiL4O1-3jkSVA" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_YVwYEEmvEeiL4O1-3jkSVA" memberEnd="_YVwYE0mvEeiL4O1-3jkSVA _YVwYFEmvEeiL4O1-3jkSVA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YVwYEUmvEeiL4O1-3jkSVA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YVwYEkmvEeiL4O1-3jkSVA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_YVwYFEmvEeiL4O1-3jkSVA" name="circulofactory" type="_qSlgwElREeiL4O1-3jkSVA" association="_YVwYEEmvEeiL4O1-3jkSVA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_YxAJoEmvEeiL4O1-3jkSVA" memberEnd="_YxAwskmvEeiL4O1-3jkSVA _YxAws0mvEeiL4O1-3jkSVA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YxAwsEmvEeiL4O1-3jkSVA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YxAwsUmvEeiL4O1-3jkSVA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_YxAws0mvEeiL4O1-3jkSVA" name="rectangulofactory" type="_qsE-0ElREeiL4O1-3jkSVA" association="_YxAJoEmvEeiL4O1-3jkSVA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ZJgJMEmvEeiL4O1-3jkSVA" memberEnd="_ZJgwQUmvEeiL4O1-3jkSVA _ZJgwQkmvEeiL4O1-3jkSVA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZJgJMUmvEeiL4O1-3jkSVA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZJgwQEmvEeiL4O1-3jkSVA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ZJgwQkmvEeiL4O1-3jkSVA" name="triangulofactory" type="_rAg9wElREeiL4O1-3jkSVA" association="_ZJgJMEmvEeiL4O1-3jkSVA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_DfbQIEm0EeiL4O1-3jkSVA" client="_9Vj6sEkKEeiZZuJPVhqdJA" supplier="_qSlgwElREeiL4O1-3jkSVA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_ELrSIEm0EeiL4O1-3jkSVA" client="_8bllwEkKEeiZZuJPVhqdJA" supplier="_rAg9wElREeiL4O1-3jkSVA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_FDYWMEm0EeiL4O1-3jkSVA" client="_9D8mQEkKEeiZZuJPVhqdJA" supplier="_PCBAQEkJEeiZZuJPVhqdJA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_5wZlEEm-EeiL4O1-3jkSVA" name="FigureFactory" isAbstract="true">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_K88z0EnDEeiL4O1-3jkSVA" name="CrearFigura">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_TVP7gEnDEeiL4O1-3jkSVA" type="_E1KTAEm_EeiL4O1-3jkSVA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_Mm5NIEnDEeiL4O1-3jkSVA" name="MostrarFiguraACrear"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_j8y8kEnDEeiL4O1-3jkSVA" name="~FigureFactory"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_E1KTAEm_EeiL4O1-3jkSVA" name="FigurasGeometricas" isAbstract="true">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_9011cEm_EeiL4O1-3jkSVA" name="mostrarDatos"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_-cqqcEm_EeiL4O1-3jkSVA" name="TrasladarEjeX">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Jum4wEnAEeiL4O1-3jkSVA" name="X">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="__q2U0Em_EeiL4O1-3jkSVA" name="TrasladarEjeY">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_NY3kAEnAEeiL4O1-3jkSVA" name="Y">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_oT7U4EnDEeiL4O1-3jkSVA" name="~FigurasGeometricas"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_du0UMEm_EeiL4O1-3jkSVA" memberEnd="_du0UM0m_EeiL4O1-3jkSVA _du07QEm_EeiL4O1-3jkSVA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_du0UMUm_EeiL4O1-3jkSVA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_du0UMkm_EeiL4O1-3jkSVA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_du07QEm_EeiL4O1-3jkSVA" name="controldefiguras" type="_qthZYEmKEeiL4O1-3jkSVA" association="_du0UMEm_EeiL4O1-3jkSVA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_YPAKoEnBEeiL4O1-3jkSVA" memberEnd="_YPAxsknBEeiL4O1-3jkSVA _YPAxs0nBEeiL4O1-3jkSVA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YPAxsEnBEeiL4O1-3jkSVA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YPAxsUnBEeiL4O1-3jkSVA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_YPAxs0nBEeiL4O1-3jkSVA" name="figurasgeometricas" type="_E1KTAEm_EeiL4O1-3jkSVA" aggregation="composite" association="_YPAKoEnBEeiL4O1-3jkSVA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_YPAxsknBEeiL4O1-3jkSVA" name="nodo" type="_oEatUEmDEeiL4O1-3jkSVA" association="_YPAKoEnBEeiL4O1-3jkSVA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_6Tpp0EnDEeiL4O1-3jkSVA" visibility="private" memberEnd="_6Tpp00nDEeiL4O1-3jkSVA _6Tpp1EnDEeiL4O1-3jkSVA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6Tpp0UnDEeiL4O1-3jkSVA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6Tpp0knDEeiL4O1-3jkSVA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_6Tpp1EnDEeiL4O1-3jkSVA" name="controldefiguras" type="_qthZYEmKEeiL4O1-3jkSVA" association="_6Tpp0EnDEeiL4O1-3jkSVA"/>
+      </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_q0rytknJEeikJsNEO7cimg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q0tn4EnJEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="FigurasGeometricas.profile.uml#_ngsc8UnKEeikJsNEO7cimg"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="FigurasGeometricas.profile.uml#_qz7kwEnJEeikJsNEO7cimg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_x85yl0nJEeikJsNEO7cimg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_x85ymEnJEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="FigureFactory.profile.uml#_SA-MAEnKEeikJsNEO7cimg"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="FigureFactory.profile.uml#_x83WUEnJEeikJsNEO7cimg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_BL66fknKEeikJsNEO7cimg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BL7hgEnKEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="Menu.profile.uml#_BL66cknKEeikJsNEO7cimg"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="Menu.profile.uml#_BL5FQEnKEeikJsNEO7cimg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GKOnhknKEeikJsNEO7cimg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GKOnh0nKEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="ControlDeFiguras.profile.uml#_GKOAcknKEeikJsNEO7cimg"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="ControlDeFiguras.profile.uml#_GKLkMEnKEeikJsNEO7cimg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1SL27UnKEeikJsNEO7cimg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1SMd8EnKEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="Circulo.profile.uml#_1SL24UnKEeikJsNEO7cimg"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="Circulo.profile.uml#_1SJaoEnKEeikJsNEO7cimg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_4U1Ih0nKEeikJsNEO7cimg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4U1IiEnKEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="Rectangulo.profile.uml#_4U0hc0nKEeikJsNEO7cimg"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="Rectangulo.profile.uml#_4UysQEnKEeikJsNEO7cimg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="__5i3LknKEeikJsNEO7cimg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__5jeMEnKEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="Triangulo.profile.uml#__5i3IknKEeikJsNEO7cimg"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="Triangulo.profile.uml#__5hpAEnKEeikJsNEO7cimg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Cqy2yknLEeikJsNEO7cimg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Cqy2y0nLEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="Punto.profile.uml#_CqyPsknLEeikJsNEO7cimg"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="Punto.profile.uml#_CqvzcEnLEeikJsNEO7cimg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HBFhlknLEeikJsNEO7cimg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HBFhl0nLEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="Nodo.profile.uml#_HBE6hEnLEeikJsNEO7cimg"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="Nodo.profile.uml#_HBDsYEnLEeikJsNEO7cimg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_neb9sEnLEeikJsNEO7cimg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_neb9sUnLEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="CirculoFactory.profile.uml#_nebWoknLEeikJsNEO7cimg"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="CirculoFactory.profile.uml#_neZhcEnLEeikJsNEO7cimg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_p-pQp0nLEeikJsNEO7cimg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_p-pQqEnLEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="RectanguloFactory.profile.uml#_p-opk0nLEeikJsNEO7cimg"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="RectanguloFactory.profile.uml#_p-nbcEnLEeikJsNEO7cimg"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_tmb2vknLEeikJsNEO7cimg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tmcdwEnLEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="TrianguloFactory.profile.uml#_tmb2sknLEeikJsNEO7cimg"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="TrianguloFactory.profile.uml#_tmaBgEnLEeikJsNEO7cimg"/>
+      </profileApplication>
+    </packagedElement>
+  </uml:Model>
+  <Menu:Boundray xmi:id="_BL8IkEnKEeikJsNEO7cimg" base_Class="_q92UYEmKEeiL4O1-3jkSVA"/>
+  <ControlDeFiguras:Controller xmi:id="_GKPOkEnKEeikJsNEO7cimg" base_Class="_qthZYEmKEeiL4O1-3jkSVA"/>
+  <FigureFactory:Interface xmi:id="_SBABMEnKEeikJsNEO7cimg" base_Class="_5wZlEEm-EeiL4O1-3jkSVA"/>
+  <FigurasGeometricas:Interface xmi:id="_ngtrEEnKEeikJsNEO7cimg" base_Class="_E1KTAEm_EeiL4O1-3jkSVA"/>
+  <Circulo:Entity xmi:id="_1SNFAEnKEeikJsNEO7cimg" base_Class="_9Vj6sEkKEeiZZuJPVhqdJA"/>
+  <Rectangulo:Entity xmi:id="_4U1vkEnKEeikJsNEO7cimg" base_Class="_9D8mQEkKEeiZZuJPVhqdJA"/>
+  <Triangulo:Entity xmi:id="__5jeMUnKEeikJsNEO7cimg" base_Class="_8bllwEkKEeiZZuJPVhqdJA"/>
+  <Punto:Entity xmi:id="_Cq0E4EnLEeikJsNEO7cimg" base_Class="_0g7VUElXEeiL4O1-3jkSVA"/>
+  <Nodo:Entity xmi:id="_HBGIoEnLEeikJsNEO7cimg" base_Class="_oEatUEmDEeiL4O1-3jkSVA"/>
+  <CirculoFactory:Controller xmi:id="_neckwEnLEeikJsNEO7cimg" base_Class="_qSlgwElREeiL4O1-3jkSVA"/>
+  <RectanguloFactory:Controller xmi:id="_p-p3sEnLEeikJsNEO7cimg" base_Class="_qsE-0ElREeiL4O1-3jkSVA"/>
+  <TrianguloFactory:Controller xmi:id="_tmdE0EnLEeikJsNEO7cimg" base_Class="_rAg9wElREeiL4O1-3jkSVA"/>
+</xmi:XMI>

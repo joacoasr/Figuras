@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_x83WUEnJEeikJsNEO7cimg" name="FigureFactory" metaclassReference="_x839YUnJEeikJsNEO7cimg">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_x85LgknJEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_SA-MAEnKEeikJsNEO7cimg" name="FigureFactory" nsURI="http:///schemas/FigureFactory/_SA9k8UnKEeikJsNEO7cimg/1" nsPrefix="FigureFactory">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SA-MC0nKEeikJsNEO7cimg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SA-MDEnKEeikJsNEO7cimg" key="Version" value="0.0.2"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SA-MDUnKEeikJsNEO7cimg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SA-MDknKEeikJsNEO7cimg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SA-MD0nKEeikJsNEO7cimg" key="Date" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SA-MEEnKEeikJsNEO7cimg" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SA-MAUnKEeikJsNEO7cimg" name="Interfaz">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SA-MAknKEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_x839YEnJEeikJsNEO7cimg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_SA-MA0nKEeikJsNEO7cimg" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SA-MBUnKEeikJsNEO7cimg" name="Interface">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SA-MBknKEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_SA7vwEnKEeikJsNEO7cimg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_SA-MB0nKEeikJsNEO7cimg" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_x85Lg0nJEeikJsNEO7cimg" name="FigureFactory" nsURI="http:///schemas/FigureFactory/_x85LgUnJEeikJsNEO7cimg/0" nsPrefix="FigureFactory">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_x85ykUnJEeikJsNEO7cimg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_x85ykknJEeikJsNEO7cimg" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_x85yk0nJEeikJsNEO7cimg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_x85ylEnJEeikJsNEO7cimg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_x85ylUnJEeikJsNEO7cimg" key="Date" value="4/27/18 12:19 AM"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_x85ylknJEeikJsNEO7cimg" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_x85LhEnJEeikJsNEO7cimg" name="Interfaz">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_x85LhUnJEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_x839YEnJEeikJsNEO7cimg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_x85LhknJEeikJsNEO7cimg" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_x839YUnJEeikJsNEO7cimg">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_x839YEnJEeikJsNEO7cimg" name="Interfaz">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_x85LgEnJEeikJsNEO7cimg" name="base_Class" association="_x84kcEnJEeikJsNEO7cimg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_x84kcEnJEeikJsNEO7cimg" name="Class_Interfaz" memberEnd="_x84kcUnJEeikJsNEO7cimg _x85LgEnJEeikJsNEO7cimg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_x84kcUnJEeikJsNEO7cimg" name="extension_Interfaz" type="_x839YEnJEeikJsNEO7cimg" aggregation="composite" association="_x84kcEnJEeikJsNEO7cimg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_SA7vwEnKEeikJsNEO7cimg" name="Interface">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SA9k8EnKEeikJsNEO7cimg" name="base_Class" association="_SA894EnKEeikJsNEO7cimg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_SA894EnKEeikJsNEO7cimg" name="Class_Interface" memberEnd="_SA894UnKEeikJsNEO7cimg _SA9k8EnKEeikJsNEO7cimg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_SA894UnKEeikJsNEO7cimg" name="extension_Interface" type="_SA7vwEnKEeikJsNEO7cimg" aggregation="composite" association="_SA894EnKEeikJsNEO7cimg"/>
+  </packagedElement>
+</uml:Profile>

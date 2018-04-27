@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_neZhcEnLEeikJsNEO7cimg" name="CirculoFactory" metaclassReference="_neavkEnLEeikJsNEO7cimg">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nebWoUnLEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_nebWoknLEeikJsNEO7cimg" name="CirculoFactory" nsURI="http:///schemas/CirculoFactory/_nebWoEnLEeikJsNEO7cimg/0" nsPrefix="CirculoFactory">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nebWqEnLEeikJsNEO7cimg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nebWqUnLEeikJsNEO7cimg" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nebWqknLEeikJsNEO7cimg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nebWq0nLEeikJsNEO7cimg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nebWrEnLEeikJsNEO7cimg" key="Date" value="4/27/18 12:32 AM"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nebWrUnLEeikJsNEO7cimg" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_nebWo0nLEeikJsNEO7cimg" name="Controller">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nebWpEnLEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_neaIgEnLEeikJsNEO7cimg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_nebWpUnLEeikJsNEO7cimg" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_neavkEnLEeikJsNEO7cimg">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_neaIgEnLEeikJsNEO7cimg" name="Controller">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_neavk0nLEeikJsNEO7cimg" name="base_Class" association="_neavkUnLEeikJsNEO7cimg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_neavkUnLEeikJsNEO7cimg" name="Class_Controller" memberEnd="_neavkknLEeikJsNEO7cimg _neavk0nLEeikJsNEO7cimg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_neavkknLEeikJsNEO7cimg" name="extension_Controller" type="_neaIgEnLEeikJsNEO7cimg" aggregation="composite" association="_neavkUnLEeikJsNEO7cimg"/>
+  </packagedElement>
+</uml:Profile>

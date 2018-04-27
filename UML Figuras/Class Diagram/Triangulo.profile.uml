@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="__5hpAEnKEeikJsNEO7cimg" name="Triangulo" metaclassReference="__5iQEEnKEeikJsNEO7cimg">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__5i3IUnKEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="__5i3IknKEeikJsNEO7cimg" name="Triangulo" nsURI="http:///schemas/Triangulo/__5i3IEnKEeikJsNEO7cimg/0" nsPrefix="Triangulo">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__5i3KEnKEeikJsNEO7cimg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__5i3KUnKEeikJsNEO7cimg" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__5i3KknKEeikJsNEO7cimg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__5i3K0nKEeikJsNEO7cimg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__5i3LEnKEeikJsNEO7cimg" key="Date" value="4/27/18 12:28 AM"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__5i3LUnKEeikJsNEO7cimg" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="__5i3I0nKEeikJsNEO7cimg" name="Entity">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__5i3JEnKEeikJsNEO7cimg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="__5hpAUnKEeikJsNEO7cimg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="__5i3JUnKEeikJsNEO7cimg" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="__5iQEEnKEeikJsNEO7cimg">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="__5hpAUnKEeikJsNEO7cimg" name="Entity">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__5iQE0nKEeikJsNEO7cimg" name="base_Class" association="__5iQEUnKEeikJsNEO7cimg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="__5iQEUnKEeikJsNEO7cimg" name="Class_Entity" memberEnd="__5iQEknKEeikJsNEO7cimg __5iQE0nKEeikJsNEO7cimg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="__5iQEknKEeikJsNEO7cimg" name="extension_Entity" type="__5hpAUnKEeikJsNEO7cimg" aggregation="composite" association="__5iQEUnKEeikJsNEO7cimg"/>
+  </packagedElement>
+</uml:Profile>
