@@ -199,10 +199,7 @@ FigurasGeometricas * ControlDeFiguras::Crear_Figuras_Geometricas(){
 
 int ControlDeFiguras::InsertarFiguraEnLaLista(Nodo *&Frente, Nodo *&Final,Nodo *L, int M, ControlDeFiguras CdF){
 
-	FigurasGeometricas *FigGeo;
-
-	FigGeo = CdF.Crear_Figuras_Geometricas();
-	L -> Lista_Push(Frente,Final,FigGeo,M);
+	L -> Lista_Push(Frente,Final,CdF.Crear_Figuras_Geometricas(),M);
 	M++;
 	return M;
 

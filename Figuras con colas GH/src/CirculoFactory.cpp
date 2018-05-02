@@ -38,7 +38,7 @@ FigurasGeometricas *CirculoFactory::CrearFigura(){
 
 	PC -> setPuntoX(PX);
 	PC -> setPuntoY(PY);
-	PC ->setRadio(PRad);
+	PC -> setRadio(PRad);
 
 	Circulo *cir;
 	cir = new Circulo( PC->getPuntoX(), PC->getPuntoY(), PC->getRadio() );
