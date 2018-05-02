@@ -14,8 +14,8 @@ using namespace std;
 
 int main() {
 
-	Menu M;
-	M . OpcionesMenu();
+	Menu *M = NULL;
+	M -> OpcionesMenu();
 
 	return 0;
 }

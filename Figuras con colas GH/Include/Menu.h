@@ -17,7 +17,7 @@ class Menu {
 
 	public:
 
-		Menu();
+		/*Menu();*/
 		virtual ~Menu();
 		void OpcionesMenu();
 

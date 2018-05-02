@@ -12,9 +12,9 @@
 
 using namespace std;
 
-Menu::Menu() {
+/*Menu::Menu() {
 
-}
+}*/
 
 Menu::~Menu() {
 
