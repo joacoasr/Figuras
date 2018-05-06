@@ -25,11 +25,11 @@ FigurasGeometricas *CirculoFactory::CrearFigura(){
 
 	FigurasGeometricas *FG;
 	Punto *PC;
+	PC = new Punto();
+
 	float PX, PY, PRad;
 
 	cout << "Ingrese los datos del Circulo:\n " << endl;
-
-	PC = new Punto();  //necesite crear el objeto e inicializarlo en algun valor
 	cout << "Punto (X,Y):" << endl;
 	cin >> PX
 		>> PY;
