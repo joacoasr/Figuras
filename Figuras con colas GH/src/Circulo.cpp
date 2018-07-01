@@ -28,7 +28,7 @@ void Circulo::mostrarDatos(){
 
 	cout << "Datos del Circulo: " << endl << endl;
 
-	cout << "Centro ubicado en [x,y]: (" << this -> p -> getPuntoX() <<","<< this -> p -> getPuntoY() <<")"<< endl;
+	cout << "Centro ubicado en [x,y]: [" << this -> p -> getPuntoX() <<","<< this -> p -> getPuntoY() <<"]"<< endl;
 	cout << "Radio: " << this -> radio << endl;
 
 };

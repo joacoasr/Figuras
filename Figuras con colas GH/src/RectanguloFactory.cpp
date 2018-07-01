@@ -34,7 +34,7 @@ FigurasGeometricas *RectanguloFactory::CrearFigura(){
 	for( i = 0 ; i < 4 ; i++){
 
 		PR[i] = new Punto();
-		cout << "\nPunto " << ( i + 1 ) << ":";
+		cout << "\nPunto " << ( i + 1 ) << ":\n";
 		PR[i] -> CargarCoordenada();
 
 	}

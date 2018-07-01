@@ -27,7 +27,7 @@ FigurasGeometricas *CirculoFactory::CrearFigura(){
 	Punto *PC = new Punto();
 	float PRad;
 
-	cout << "Ingrese las coordenadas del centro del circulo: " << endl;
+	cout << "Ingrese las coordenadas del centro del circulo:\n" << endl;
 	PC -> CargarCoordenada();
 	cout << "Radio: ";
 	cin >> PRad;
