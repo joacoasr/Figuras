@@ -54,72 +54,103 @@ void ControlDeFiguras::Trasladar_ejes_figuras(Nodo *Frente,Nodo *L, int MAX){
 
 			if( ( VTid >= 0 ) && ( VTid < MAX ) ){
 
-				while (( caso > 0 ) && (caso < 4)){
+				if ( ( caso > 0 ) && ( caso < 4 )){
 
-					cout << "\nOpciones:\n" << endl
-						 << "1) Trasladar en el eje X\n" << endl
-						 << "2) Trasladar en el eje Y\n" << endl
-						 << "3) Trasladar en el eje X e Y" << endl
-						 << "\nOpcion: ";
-					cin >> caso;
+					while( actual != NULL ){
 
-					if ( ( caso > 0 ) && ( caso < 4 )){
+						if( actual -> getid() == VTid ){
 
-						while( actual != NULL ){
+							cout << "\n--------------------\n"
+									"\nFigura seleccionada: "
+									"\nid: " << actual -> getid() << endl;
+							actual -> getFigGeo() -> mostrarDatos();
+							cout << "\n-------------------" << endl;
 
-							if( actual->getid() == VTid ){
+							while ( caso > 0 && caso < 4 )
+							{
 
-								switch (caso){
+								if ( caso > 0 && caso < 4 )
+								{
 
-									case 1:
+									cout << "\nOpciones:\n" << endl
+										 << "1) Trasladar en el eje X\n" << endl
+										 << "2) Trasladar en el eje Y\n" << endl
+										 << "3) Trasladar en el eje X e Y" << endl
+										 << "\nOpcion: ";
+									cin >> caso;
 
-										cout << "\nEn que valor desea trasladar al eje X:";
-										cin >> ValorTraslacionX;
+									switch (caso)
+									{
 
-										actual -> getFigGeo() -> TrasladarEjeX(ValorTraslacionX);
+										case 1:
 
-										break;
+											cout << "\nEn que valor desea trasladar al eje X:";
+											cin >> ValorTraslacionX;
 
-									case 2:
+											actual -> getFigGeo() -> TrasladarEjeX(ValorTraslacionX);
 
-										cout << "\nEn que valor desea trasladar al eje Y:";
-										cin >> ValorTraslacionY;
+											break;
 
-										actual -> getFigGeo() -> TrasladarEjeY(ValorTraslacionY);
+										case 2:
 
-										break;
+											cout << "\nEn que valor desea trasladar al eje Y:";
+											cin >> ValorTraslacionY;
 
-									case 3:
+											actual -> getFigGeo() -> TrasladarEjeY(ValorTraslacionY);
 
-										cout << "\nEn que valor desea trasladar al eje X:";
-										cin >> ValorTraslacionX;
-										actual -> getFigGeo() -> TrasladarEjeX(ValorTraslacionX);
+											break;
 
-										cout << "\nEn que valor desea trasladar al eje Y:";
-										cin >> ValorTraslacionY;
-										actual -> getFigGeo() -> TrasladarEjeY(ValorTraslacionY);
+										case 3:
 
-									break;
+											cout << "\nEn que valor desea trasladar al eje X:";
+											cin >> ValorTraslacionX;
 
-									default:
+											actual -> getFigGeo() -> TrasladarEjeX(ValorTraslacionX);
 
-										cout << "Opcion Incorrecta, intentalo de nuevo xD" <<endl;
+											cout << "\nEn que valor desea trasladar al eje Y:";
+											cin >> ValorTraslacionY;
+
+											actual -> getFigGeo() -> TrasladarEjeY(ValorTraslacionY);
+
+											break;
+
+										default:
+
+											cout << "Opcion Incorrecta." <<endl;
+
+									}
+
+									cout << "\n-------------------\n"
+											"\nFigura trasladada: "
+											"\nid: "<< actual -> getid() << endl;
+									actual -> getFigGeo() -> mostrarDatos();
+									cout << "\n-------------------" << endl;
+
+									caso = 0;
 
 								}
+								else
+								{
+
+									cout << "\nOpcion incorrecta." << endl;
+									caso = 1;
+
+								}
+
 							}
-							actual = actual -> getNodo();
 						}
-
-						caso = -1;
-						VTid = -1;
-
-					}else if ( ( caso < 1 ) || ( caso > 3 )){
-
-							  cout << "Opcion no valida." << endl;
-							  caso = 1;
-
+						actual = actual -> getNodo();
 					}
+
+					VTid = -1;
+
+				}else if ( ( caso < 1 ) || ( caso > 3 )){
+
+						  cout << "Opcion no valida." << endl;
+						  caso = 1;
+
 				}
+
 			}else{
 
 				cout << "\nNo hay Figuras con ese id." << endl;

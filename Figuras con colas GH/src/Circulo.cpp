@@ -14,10 +14,9 @@
 
 using namespace std;
 
-Circulo::Circulo(float coorX, float coorY, float Rad) {
+Circulo::Circulo(Punto *_p, float Rad) {
 
-	this -> X = coorX;
-	this -> Y = coorY;
+	this -> p = _p;
 	this -> radio = Rad;
 
 };
@@ -29,20 +28,20 @@ void Circulo::mostrarDatos(){
 
 	cout << "Datos del Circulo: " << endl << endl;
 
-	cout << "Centro ubicado en (X,Y): (" << X <<","<< Y <<")"<< endl;
-	cout << "Radio: " << radio << endl;
+	cout << "Centro ubicado en [x,y]: (" << this -> p -> getPuntoX() <<","<< this -> p -> getPuntoY() <<")"<< endl;
+	cout << "Radio: " << this -> radio << endl;
 
 };
 
 void Circulo::TrasladarEjeX(float ValorX){
 
-	this -> X = this -> X + ValorX;
+	this -> p -> setPuntoX( this -> p -> getPuntoX() + ValorX );
 
 };
 
 void Circulo::TrasladarEjeY(float ValorY){
 
-	this -> Y = this -> Y + ValorY;
+	this -> p -> setPuntoY( this -> p -> getPuntoY() + ValorY );
 
 };
 

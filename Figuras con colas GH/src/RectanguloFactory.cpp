@@ -28,24 +28,18 @@ FigurasGeometricas *RectanguloFactory::CrearFigura(){
 
 	FigurasGeometricas *FG;
 	Punto *PR[4];
-	float PX[4],PY[4];
 
-	cout << "Ingrese los puntos del rectangulo:\n " << endl;
+	cout << "Ingrese las coordenadas de cada punto: " << endl;
 
 	for( i = 0 ; i < 4 ; i++){
 
-		PR[i] = new Punto();  //necesite crear el objeto e inicializarlo en algun valor
-		cout << "Punto (X" << ( i + 1 ) << ",Y" << ( i + 1 ) << "):" << endl;
-		cin >> PX[i]
-			>> PY[i];
-
-		PR[i] -> setPuntoX(PX[i]);
-		PR[i] -> setPuntoY(PY[i]);
+		PR[i] = new Punto();
+		cout << "\nPunto " << ( i + 1 ) << ":";
+		PR[i] -> CargarCoordenada();
 
 	}
 
-	Rectangulo *rect;
-	rect = new Rectangulo( PR[0]->getPuntoX(), PR[0]->getPuntoY(), PR[1]->getPuntoX(), PR[1]->getPuntoY(), PR[2]->getPuntoX(), PR[2]->getPuntoY(), PR[3]->getPuntoX(), PR[3]->getPuntoY() );
+	Rectangulo *rect = new Rectangulo( PR[0], PR[1], PR[2], PR[3] );
 
 	FG = rect;
 

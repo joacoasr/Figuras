@@ -10,36 +10,41 @@
 
 using namespace std;
 
-Punto::~Punto() {
+Punto::~Punto()
+{
 }
 
-void Punto::setPuntoX(float PX){
+void Punto::setPuntoX(float PX)
+{
 
 	this -> X = PX;
 
 };
-void Punto::setPuntoY(float PY){
+void Punto::setPuntoY(float PY)
+{
 
 	this -> Y = PY;
 
 };
-void Punto::setRadio(float Rad){
 
-	this -> Radio = Rad;
-
-};
-float Punto::getPuntoX(){
+float Punto::getPuntoX()
+{
 
 	return(this->X);
 
 };
-float Punto::getPuntoY(){
+float Punto::getPuntoY()
+{
 
 	return(this->Y);
 
 };
-float Punto::getRadio(){
+void Punto::CargarCoordenada()
+{
 
-	return(this->Radio);
+	cout << "Ingrese la coordenada x:";
+	cin >> this->X;
+	cout << "Ingrese la coordenada y:";
+	cin >> this->Y;
 
-};
+}

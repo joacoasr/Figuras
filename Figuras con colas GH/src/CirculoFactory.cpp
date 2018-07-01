@@ -24,24 +24,15 @@ CirculoFactory::~CirculoFactory() {
 FigurasGeometricas *CirculoFactory::CrearFigura(){
 
 	FigurasGeometricas *FG;
-	Punto *PC;
-	PC = new Punto();
+	Punto *PC = new Punto();
+	float PRad;
 
-	float PX, PY, PRad;
-
-	cout << "Ingrese los datos del Circulo:\n " << endl;
-	cout << "Punto (X,Y):" << endl;
-	cin >> PX
-		>> PY;
-	cout << "Radio: " << endl;
+	cout << "Ingrese las coordenadas del centro del circulo: " << endl;
+	PC -> CargarCoordenada();
+	cout << "Radio: ";
 	cin >> PRad;
 
-	PC -> setPuntoX(PX);
-	PC -> setPuntoY(PY);
-	PC -> setRadio(PRad);
-
-	Circulo *cir;
-	cir = new Circulo( PC->getPuntoX(), PC->getPuntoY(), PC->getRadio() );
+	Circulo *cir = new Circulo(PC, PRad);
 
 	FG = cir;
 

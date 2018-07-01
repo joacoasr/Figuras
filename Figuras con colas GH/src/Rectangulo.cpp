@@ -13,16 +13,12 @@
 
 using namespace std;
 
-Rectangulo::Rectangulo(float XPUno, float YPUno, float XPDos, float YPDos, float XPTres, float YPTres, float XPcuatro, float YPCuatro){
+Rectangulo::Rectangulo(Punto *_p1, Punto *_p2, Punto *_p3, Punto *_p4){
 
-	this -> Xp1 = XPUno;
-	this -> Yp1 = YPUno;
-	this -> Xp2 = XPDos;
-	this -> Yp2 = YPDos;
-	this -> Xp3 = XPTres;
-	this -> Yp3 = YPTres;
-	this -> Xp4 = XPcuatro;
-	this -> Yp4 = YPCuatro;
+	this -> p1 = _p1;
+	this -> p2 = _p2;
+	this -> p3 = _p3;
+	this -> p4 = _p4;
 
 };
 
@@ -35,27 +31,27 @@ void Rectangulo::mostrarDatos(){
 
 	cout << "Datos del Rectangulo: " << endl << endl;
 
-	cout << "Punto (X1,Y1): (" << Xp1 << "," << Yp1 << ")" << endl;
-	cout << "Punto (X2,Y2): (" << Xp2 << "," << Yp2 << ")" << endl;
-	cout << "Punto (X3,Y3): (" << Xp3 << "," << Yp3 << ")" << endl;
-	cout << "Punto (X4,Y4): (" << Xp4 << "," << Yp4 << ")" << endl;
+	cout << "Punto [x1,y1]: [" << this -> p1 -> getPuntoX() << "," << this -> p1 -> getPuntoY() << "]" << endl;
+	cout << "Punto [x2,y2]: [" << this -> p2 -> getPuntoX() << "," << this -> p2 -> getPuntoY() << "]" << endl;
+	cout << "Punto [x3,y3]: [" << this -> p3 -> getPuntoX() << "," << this -> p3 -> getPuntoY() << "]" << endl;
+	cout << "Punto [x4,y4]: [" << this -> p4 -> getPuntoX() << "," << this -> p4 -> getPuntoY() << "]" << endl;
 
 };
 
 void Rectangulo::TrasladarEjeX(float ValorX){
 
-	this -> Xp1 = this -> Xp1 + ValorX;
-	this -> Xp2 = this -> Xp2 + ValorX;
-	this -> Xp3 = this -> Xp3 + ValorX;
-	this -> Xp4 = this -> Xp4 + ValorX;
+	this -> p1 -> setPuntoX( this -> p1 -> getPuntoX() + ValorX );
+	this -> p2 -> setPuntoX( this -> p2 -> getPuntoX() + ValorX );
+	this -> p3 -> setPuntoX( this -> p3 -> getPuntoX() + ValorX );
+	this -> p4 -> setPuntoX( this -> p4 -> getPuntoX() + ValorX );
 
 };
 
 void Rectangulo::TrasladarEjeY(float ValorY){
 
-	this -> Yp1 = this -> Yp1 + ValorY;
-	this -> Yp2 = this -> Yp2 + ValorY;
-	this -> Yp3 = this -> Yp3 + ValorY;
-	this -> Yp4 = this -> Yp4 + ValorY;
+	this -> p1 -> setPuntoY( this -> p1 -> getPuntoY() + ValorY );
+	this -> p2 -> setPuntoY( this -> p2 -> getPuntoY() + ValorY );
+	this -> p3 -> setPuntoY( this -> p3 -> getPuntoY() + ValorY );
+	this -> p4 -> setPuntoY( this -> p4 -> getPuntoY() + ValorY );
 
 };

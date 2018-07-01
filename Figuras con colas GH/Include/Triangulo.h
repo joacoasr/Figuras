@@ -15,11 +15,11 @@ class Triangulo:public FigurasGeometricas{
 
 	private:
 
-		float X1, Y1, X2, Y2, X3, Y3;
+		Punto *p1, *p2, *p3;
 
 	public:
 
-		Triangulo(float,float,float,float,float,float);
+		Triangulo(Punto *, Punto *, Punto *);
 		virtual ~Triangulo();
 		void mostrarDatos();
 		void TrasladarEjeX(float);

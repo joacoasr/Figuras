@@ -13,15 +13,11 @@
 
 using namespace std;
 
-Triangulo::Triangulo(float CX1,float CY1,float CX2,float CY2,float CX3,float CY3) {
+Triangulo::Triangulo(Punto *_p1, Punto *_p2, Punto *_p3) {
 
-	this -> X1 = CX1;
-	this -> Y1 = CY1;
-	this -> X2 = CX2;
-	this -> Y2 = CY2;
-	this -> X3 = CX3;
-	this -> Y3 = CY3;
-
+	this -> p1 = _p1;
+	this -> p2 = _p2;
+	this -> p3 = _p3;
 
 };
 
@@ -33,25 +29,25 @@ void Triangulo::mostrarDatos(){
 
 	cout << "Datos del Triangulo: " << endl << endl;
 
-	cout << "Punto (X1,Y1): (" << X1 << "," << Y1 << ")" << endl;
-	cout << "Punto (X2,Y2): (" << X2 << "," << Y2 << ")" << endl;
-	cout << "Punto (X3,Y3): (" << X3 << "," << Y3 << ")" << endl;
+	cout << "Punto [x1,y1]: [" << this -> p1 -> getPuntoX() << "," << this -> p1 -> getPuntoY() << "]" << endl;
+	cout << "Punto [X2,Y2]: [" << this -> p2 -> getPuntoX() << "," << this -> p2 -> getPuntoY() << "]" << endl;
+	cout << "Punto [X3,Y3]: [" << this -> p3 -> getPuntoX() << "," << this -> p3 -> getPuntoY() << "]" << endl;
 
 };
 
 void Triangulo::TrasladarEjeX(float ValorX){
 
-	this -> X1 = this -> X1 + ValorX;
-	this -> X2 = this -> X2 + ValorX;
-	this -> X3 = this -> X3 + ValorX;
+	this -> p1 -> setPuntoX( this -> p1 -> getPuntoX() + ValorX );
+	this -> p2 -> setPuntoX( this -> p2 -> getPuntoX() + ValorX );
+	this -> p3 -> setPuntoX( this -> p3 -> getPuntoX() + ValorX );
 
 };
 
 void Triangulo::TrasladarEjeY(float ValorY){
 
-	this -> Y1 = this -> Y1 + ValorY;
-	this -> Y2 = this -> Y2 + ValorY;
-	this -> Y3 = this -> Y3 + ValorY;
+	this -> p1 -> setPuntoY( this -> p1 -> getPuntoY() + ValorY );
+	this -> p2 -> setPuntoY( this -> p2 -> getPuntoY() + ValorY );
+	this -> p3 -> setPuntoY( this -> p3 -> getPuntoY() + ValorY );
 
 };
 

@@ -9,6 +9,8 @@
 #ifndef FIGURASGEOMETRICAS_H_
 #define FIGURASGEOMETRICAS_H_
 
+#include "Punto.h"
+
 class FigurasGeometricas {
 
 	private:
