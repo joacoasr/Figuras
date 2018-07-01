@@ -71,7 +71,7 @@ void Nodo::Lista_Push(Nodo *&Frente, Nodo *&Final, FigurasGeometricas *FigGeo, i
 	 }
 
 	 Final = NuevoNodo;
-	 cout << "Figura correctamente incertada." << endl ;
+	 cout << "\nFigura correctamente incertada." << endl ;
 
 };
 
