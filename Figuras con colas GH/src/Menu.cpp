@@ -44,7 +44,7 @@ void Menu::OpcionesMenu(){
 		     << "4) Cambiar figura de lugar (ver lista y utilizar el id de la figura). " << endl
 		     << "5) Eliminar figura segun id." << endl
 			 << "6) Eliminar figura(pop-FIFO)." << endl
-			 << "7) Cuantas figuras hay en total." << endl
+			 << "7) Cantidad de figuras en la lista." << endl
 			 << "8) Mostrar primer figura de la lista." << endl
 			 << "9) Mostrar la ultima figura de la lista." << endl
 			 << "\nIngrese la opcion:";
