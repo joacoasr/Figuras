@@ -8,15 +8,10 @@
 
 #include "../include/Punto.h"
 
+#include <iostream>
+
 using namespace std;
 
-/*Punto::Punto( float PX, float PY, float R ) {
-
-	this -> X = PX;
-	this -> Y = PY;
-	this -> Radio = R;
-
-}*/
 
 Punto::~Punto() {
 	// TODO Auto-generated destructor stub
@@ -24,31 +19,29 @@ Punto::~Punto() {
 
 void Punto::setPuntoX( float PX ){
 
-	this -> X = PX;
+	this -> x = PX;
 
 }
 void Punto::setPuntoY( float PY ){
 
-	this -> Y = PY;
+	this -> y = PY;
 
 }
-void Punto::setRadio(float Rad){
 
-	this -> Radio = Rad;
-
-}
 float Punto::getPuntoX(){
 
-	return(this->X);
+	return(this->x);
 
 }
 float Punto::getPuntoY(){
 
-	return(this->Y);
+	return(this->y);
 
 }
-float Punto::getRadio(){
-
-	return (this->Radio);
-
-};
+void Punto::CargarDatos()
+{
+	cout << "Ingrese la coordenada x:";
+	cin >> this -> x;
+	cout << "Ingrese la coordenada y:";
+	cin >> this -> y;
+}

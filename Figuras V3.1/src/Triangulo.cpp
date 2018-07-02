@@ -13,15 +13,12 @@
 
 using namespace std;
 
-Triangulo::Triangulo(float CX1,float CY1,float CX2,float CY2,float CX3,float CY3) {
+Triangulo::Triangulo(Punto *_VecPuntos[]) {
 
-	this -> PuntoX1 = CX1;
-	this -> PuntoY1 = CY1;
-	this -> PuntoX2 = CX2;
-	this -> PuntoY2 = CY2;
-	this -> PuntoX3 = CX3;
-	this -> PuntoY3 = CY3;
-
+	for ( int i = 0 ; i < 3 ; i++ )
+	{
+		this -> VecPuntos[i] = _VecPuntos[i];
+	}
 
 };
 
@@ -33,25 +30,31 @@ void Triangulo::mostrarDatos(){
 
 	cout << "Datos del Triangulo: " << endl << endl;
 
-	cout << "Punto (X1,Y1): (" << PuntoX1 << "," << PuntoY1 << ")" << endl;
-	cout << "Punto (X2,Y2): (" << PuntoX2 << "," << PuntoY2 << ")" << endl;
-	cout << "Punto (X3,Y3): (" << PuntoX3 << "," << PuntoY3 << ")" << endl;
+	for( int i = 0 ; i < 3 ; i++ )
+	{
 
+		cout << "Punto [x" << (i+1) << ",y" << (i+1) << "]: [" << this -> VecPuntos[i] -> getPuntoX() << "," << this -> VecPuntos[i] -> getPuntoY() << "]" << endl;
+
+	}
 };
 
 void Triangulo::TrasladarEjeX(float ValorX){
 
-	this -> PuntoX1 = this -> PuntoX1 + ValorX;
-	this -> PuntoX2 = this -> PuntoX2 + ValorX;
-	this -> PuntoX3 = this -> PuntoX3 + ValorX;
+	for ( int i = 0 ; i < 3 ; i++ )
+	{
 
+		this -> VecPuntos[i] -> setPuntoX( this -> VecPuntos[i] -> getPuntoX() + ValorX );
+
+	}
 };
 
 void Triangulo::TrasladarEjeY(float ValorY){
 
-	this -> PuntoY1 = this -> PuntoY1 + ValorY;
-	this -> PuntoY2 = this -> PuntoY2 + ValorY;
-	this -> PuntoY3 = this -> PuntoY3 + ValorY;
+	for ( int i = 0 ; i < 3 ; i++ )
+	{
 
+		this -> VecPuntos[i] -> setPuntoY( this -> VecPuntos[i] -> getPuntoY() + ValorY );
+
+	}
 };
 

@@ -15,11 +15,12 @@ class Circulo:public FigurasGeometricas {
 
 	private:
 
-		float coordenadaX, coordenadaY, radio;
+		float radio;
+		Punto *p;
 
 	public:
 
-		Circulo(float, float, float);
+		Circulo(Punto *, float);
 		virtual ~Circulo();
 		void mostrarDatos();
 		void TrasladarEjeX(float);

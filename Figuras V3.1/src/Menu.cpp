@@ -50,11 +50,16 @@ void Menu::OpcionesMenu(){
 
 		}else{
 
+			/*if(CdF.getMaximo() < max)
+			{
+				cout << "\nEl vector tiene espacio para agregar figura/s." << endl;
+			}*/
+
 			cout << "\nOpciones:" << endl
 				 <<	"0) Salir del programa. " << endl
 				 << "1) Trasladar ejes. " << endl
 				 << "2) Mostrar figuras. " << endl
-				 << "3) Intercambiar figuras dentro del vector. " << endl
+				 << "3) Swap de figuras dentro del vector. " << endl
 				 << "4) Cambia posicion de figura dentro del vector." << endl
 				 << "5) Eliminar figura." << endl
 				 << "6) Cuantas figuras hay en total." << endl

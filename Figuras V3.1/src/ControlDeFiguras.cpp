@@ -46,6 +46,11 @@ void ControlDeFiguras::Trasladar_ejes_figuras(FigurasGeometricas *FiGe[], int n)
 
 			while (( caso > 0 ) && (caso < 4)){
 
+				cout << "\n------------------\n"
+						"Figura elegida:" << endl;
+				FiGe[ ValorTras - 1 ]-> mostrarDatos();
+				cout << "\n------------------" << endl;
+
 				cout << "\nOpciones:\n" << endl
 					 << "1) Trasladar en el eje X\n" << endl
 					 << "2) Trasladar en el eje Y\n" << endl
@@ -96,9 +101,16 @@ void ControlDeFiguras::Trasladar_ejes_figuras(FigurasGeometricas *FiGe[], int n)
 									cout << "Opcion Incorrecta, intentalo de nuevo xD" <<endl;
 
 							}
+
 						}
 					}
 					caso = -1;
+
+					cout << "\n------------------\n"
+							"Figura con ejes trasladados:" << endl;
+					FiGe[ ValorTras - 1 ]-> mostrarDatos();
+					cout << "\n------------------" << endl;
+
 					ValorTras = 0;
 
 				}else if ( ( caso < 1 ) || ( caso > 3 )){
@@ -143,7 +155,7 @@ FigurasGeometricas * ControlDeFiguras::Crear_Figuras_Geometricas(){
 
 	while( ( caso > 0 ) && ( caso < 4 ) ){
 
-		cout << "Elija que figura geometrica crear:\n " << endl
+		cout << "\nElija que figura geometrica crear:\n " << endl
 			 << "1) Rectangulo.\n" << endl
 			 << "2) Triangulo.\n" << endl
 			 << "3) Circulo." <<endl

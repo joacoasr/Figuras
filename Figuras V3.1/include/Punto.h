@@ -15,7 +15,7 @@ class Punto {
 
 	private:
 
-		float X, Y, Radio;
+		float x, y;
 
 	public:
 
@@ -23,12 +23,12 @@ class Punto {
 
 		//Punto(float,float,float);
 		virtual ~Punto();
+		void CargarDatos();
 		void setPuntoX(float );
 		void setPuntoY(float );
-		void setRadio(float);
 		float getPuntoX();
 		float getPuntoY();
-		float getRadio();
+
 
 };
 
