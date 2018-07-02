@@ -38,7 +38,7 @@ FigurasGeometricas *TrianguloFactory::CrearFigura(){
 
 	}
 
-	Triangulo *tri = new Triangulo(PT[0],PT[1],PT[2]);
+	Triangulo *tri = new Triangulo(PT);
 
 	FG = tri;
 

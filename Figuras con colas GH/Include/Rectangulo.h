@@ -15,11 +15,11 @@ class Rectangulo:public FigurasGeometricas{
 
 	private:
 
-		Punto *p1, *p2, *p3, *p4;
+		Punto *VecPuntos[4];
 
 	public:
 
-		Rectangulo(Punto *, Punto *, Punto *, Punto *);
+		Rectangulo(Punto *_VecPuntos[]);
 		virtual ~Rectangulo();
 		void mostrarDatos();
 		void TrasladarEjeX(float);

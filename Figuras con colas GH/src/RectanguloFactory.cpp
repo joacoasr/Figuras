@@ -39,7 +39,7 @@ FigurasGeometricas *RectanguloFactory::CrearFigura(){
 
 	}
 
-	Rectangulo *rect = new Rectangulo( PR[0], PR[1], PR[2], PR[3] );
+	Rectangulo *rect = new Rectangulo( PR );
 
 	FG = rect;
 
